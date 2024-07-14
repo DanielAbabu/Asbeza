@@ -1,4 +1,5 @@
 import "./footer.css";
+import { LuSendHorizonal } from "react-icons/lu";
 
 export default function Footer() {
   return (
@@ -14,7 +15,12 @@ export default function Footer() {
 
         <div className="right-footer">
           <h3>Contact us</h3>
-          <input type="text" placeholder="write us your thoughts" />
+          <div className="footer-input">
+            <input type="text" placeholder="write us your thoughts" />
+            <span>
+              <LuSendHorizonal />
+            </span>
+          </div>
         </div>
       </div>
     </div>
