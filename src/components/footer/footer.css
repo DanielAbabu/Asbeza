@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'khuja-Uppercase';
+    src: url('../../assets/Fonts/Khuja-Uppercase-BF668c04acd5509.otf') format('opentype'); /* Adjusted path */
+    font-weight: normal;
+    font-style: normal;
+}
+.footer-wrapper {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%; 
+}
+.footer {
+    display: flex;
+    justify-content: space-between; 
+    background-color: #003032;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 2px;
+}
+.left-footer {
+    padding-left: 30px;
+}
+.right-footer {
+    padding-right: 30px;
+}
+.left-footer h1 {
+    color: #BBEA70;
+    font-family: 'khuja-Uppercase', serif;
+    margin-bottom: 0px;
+}
+.left-footer p {
+    color: white;
+    margin-top: 1px;
+}
+
+.right-footer h3 {
+    color: white;
+    margin-bottom: 8px;
+}
+.right-footer input[type = "text"]{
+    width: 500px;
+    height: 34px;
+    border: 1px solid white;
+    border-radius: 23px; 
+    color: white;
+    background-color: #003032;
+    padding-left: 15px;
+}
+.right-footer input[type = "text"]::placeholder{
+    color: white;
+}
