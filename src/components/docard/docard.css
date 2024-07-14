@@ -1,0 +1,27 @@
+@import "src/styles/variable.css";
+
+.docard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.docard .disp{
+    width: 160px;
+    height: 160px;
+    margin: 20px 0;
+    background-color: var(--g1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.docard .desc{
+    margin: 5px 0;
+    width: 280px;
+    font-weight: 400;
+    text-align: center;
+}
+

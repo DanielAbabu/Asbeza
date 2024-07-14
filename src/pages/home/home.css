@@ -1,0 +1,84 @@
+@import "src/styles/variable.css";
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.welcome{
+    display: flex;
+    background-color: var(--g1);
+    background-image: url("src/assets/homebg1.png"); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    margin: 130px 110px 90px 110px;
+    width: 1230px;
+    height: 560px;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+
+.welcome .pic img{
+    width: 360px;
+    height: 420px;
+    border-radius: 20px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text .tit{
+    width: 440px;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.text .desc{
+    width: 550px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.offer{
+    margin: 40px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.trend {
+    width: 100%;
+    padding: 45px 110px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("src/assets/homebg2.png");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.trend h1{
+    margin-bottom: 20px;
+    color: white;
+}
+
+.trend .lis{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.trend .expl{
+    color: var(--g2);
+    font-weight: 500;
+    font-size: 24px;
+    align-self: flex-end;
+    margin: 20px 100px 0 0;    
+}
+

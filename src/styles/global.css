@@ -13,7 +13,7 @@ a{
 
 .main{
     font-family: "Poppins", sans-serif;
-    background-color: var(--bg);
+    background-color: var(--mainbg);
     font-weight: 400;
     color: black;
 }

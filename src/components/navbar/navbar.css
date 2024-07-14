@@ -5,9 +5,11 @@
 }
 
 .navbar{
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 20px 100px;
+    padding: 30px 100px;
     align-items: center;
     background-color: white;
 }
@@ -32,11 +34,15 @@
     font-weight: 700;
 }
 
+.page a{
+    font-weight: 500;
+}
+
 .right{
     display: flex;
     align-items: center;
 }
-.right img{
+.navbar .right img{
     width: 40px;
     height: 40px;
     margin-left: 35px;
