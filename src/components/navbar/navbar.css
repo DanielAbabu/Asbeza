@@ -1,3 +1,4 @@
+@import "src/styles/variable.css";
 @font-face {
     font-family: 'Khuja';
     src: url('src/assets/Khuja.otf') format('opentype');
@@ -14,6 +15,7 @@
 .logo{
     font-size: 32px;
     font-family: "Khuja", sans-serif ;
+    color: var(--g1);
 }
 
 .navbar .page{
@@ -21,6 +23,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/* on selected */
+.navbar .page .home{
+    font-size: 18px;
+    color: var(--g2);
+    font-weight: 700;
 }
 
 .right{
@@ -33,7 +42,10 @@
     margin-left: 35px;
     border-radius: 50%;
 }
+
 .right .signin{
     margin-left: 35px;
-
+    background-color: var(--g2);
+    padding: 5px 25px;
+    border-radius: 3px;
 }
