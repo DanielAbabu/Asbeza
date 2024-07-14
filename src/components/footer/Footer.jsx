@@ -14,7 +14,7 @@ export default function Footer() {
         </div>
 
         <div className="right-footer">
-          <h3>Contact us</h3>
+          <h5>Contact us</h5>
           <div className="footer-input">
             <input type="text" placeholder="write us your thoughts" />
             <span>

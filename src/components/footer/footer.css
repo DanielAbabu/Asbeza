@@ -36,9 +36,10 @@
     margin-top: 1px;
     font-size: small;
 }
-.right-footer h3 {
+.right-footer h5 {
     color: white;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
+    font-weight:500;
 }
 .footer-input {
     width: 100%;
