@@ -1,12 +1,26 @@
+@font-face {
+    font-family: 'Khuja';
+    src: url('src/assets/Khuja.otf') format('opentype');
+}
+
 .navbar{
     display: flex;
     justify-content: space-between;
     padding: 20px 100px;
+    align-items: center;
+    background-color: white;
 }
+
+.logo{
+    font-size: 32px;
+    font-family: "Khuja", sans-serif ;
+}
+
 .navbar .page{
     width: 25%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .right{
@@ -16,10 +30,10 @@
 .right img{
     width: 40px;
     height: 40px;
-    margin-left: 25px;
+    margin-left: 35px;
     border-radius: 50%;
 }
 .right .signin{
-    margin-left: 25px;
+    margin-left: 35px;
 
 }

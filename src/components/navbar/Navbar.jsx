@@ -12,10 +12,9 @@ export default function Navbar(){
                 <a href="/ingredient">Ingredient</a>
             </div>
             <div className="right">
-
-                <MdOutlineShoppingCart/>
+                <MdOutlineShoppingCart size={"30px"} />
                 <div className="signin"><a href="">Sign in</a></div>
-                <img className="profile" src="./src\assets\profile.jpg" alt="" />
+                <div className="profile"><img  src="./src\assets\profile.jpg" alt="" /></div>
             </div>
         </div>
     )
