@@ -34,6 +34,10 @@
     font-weight: 700;
 }
 
+.page a{
+    font-weight: 500;
+}
+
 .right{
     display: flex;
     align-items: center;
