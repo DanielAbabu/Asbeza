@@ -1,0 +1,40 @@
+@import "src/styles/variable.css";
+
+
+.mealcard{
+    margin: 30px 60px;
+    width: 330px;
+    height: 420px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px #18181871;
+}
+
+.mealcard .pic{
+    width: 290px;
+    height: 210px;
+    object-fit: cover; 
+    object-position: center; 
+    border-radius: 10px;
+}
+
+.mealcard .tit{
+    margin: 10px 0;
+
+}
+
+.mealcard .desc{
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+.mealcard .ingr{
+    display: flex;
+    justify-content: center;
+    background-color: var(--g2);
+    padding: 10px 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    margin-top: 25px ;
+}
