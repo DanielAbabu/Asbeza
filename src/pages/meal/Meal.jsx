@@ -1,4 +1,6 @@
 import "./meal.css";
+import { HiOutlineAdjustmentsHorizontal } from "react-icons/hi2";
+import { CiSearch } from "react-icons/ci";
 
 export default function Meal() {
   return (
@@ -6,10 +8,12 @@ export default function Meal() {
       <div className="meal-page-top">
         <div className="trending-wrapper">
           <div className="trending">
-            <div className="trending-details">
+            <div className="trending-text">
               <h2> Trending Meal</h2>
-              <p>Smoked beef</p>
-              <p>meat, onion </p>
+              <div className="trending-details">
+                <h3>Smoked beef</h3>
+                <p>Meat , Chicken, Onion, Spice</p>
+              </div>
             </div>
             <img src="src\assets\steak.jpg" alt="beef" />
           </div>
@@ -25,10 +29,21 @@ export default function Meal() {
 
       <div className="meal-page-bottom">
         <div className="meal-search">
-          <p>jfklajdljfkl</p>
+          <p>Find Your Meal</p>
+          <div className="search-right">
+            <div className="search-input">
+              <input type="text" placeholder="what are you looking for" />
+              <span>
+                <CiSearch />
+              </span>
+            </div>
+            <span>
+              <HiOutlineAdjustmentsHorizontal className="adjust-icon" />
+            </span>
+          </div>
         </div>
         <div className="meal-display">
-          <p>jfklajdljfkl</p>
+          <p>meal display</p>
         </div>
       </div>
     </div>
