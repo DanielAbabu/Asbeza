@@ -29,7 +29,9 @@
     overflow: hidden;
 }
 .trending-text {
-    background-color: #003032;
+    background-image:url("src/assets/homebg2.png");
+    background-size:cover ;
+    background-position: center;
     color:white;
     padding: 10px;
     width: 130%;
@@ -62,7 +64,9 @@
     overflow: hidden;
 }
 .ingrediant-details {
-    background-color: #003032;
+    background-image:url("src/assets/homebg1.png");
+    background-size:cover ;
+    background-position: center;
     color:white;
     padding: 10px;
     width: 100%;
@@ -126,3 +130,13 @@
     color: black;
     cursor: pointer;
 }
+.meal-display {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 3 columns */
+    gap: 20px;
+    margin: 0px;
+}
+.meal-display .mealcard  {
+    margin: 25px 15px 25px 15px;
+  }
+  

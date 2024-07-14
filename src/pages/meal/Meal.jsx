@@ -1,8 +1,9 @@
 import "./meal.css";
 import { HiOutlineAdjustmentsHorizontal } from "react-icons/hi2";
 import { CiSearch } from "react-icons/ci";
-
+import Mealcard from "../../components/mealcard/Mealcard";
 export default function Meal() {
+  const mealCards = Array.from({ length: 20 });
   return (
     <div className="meal-page">
       <div className="meal-page-top">
@@ -43,7 +44,9 @@ export default function Meal() {
           </div>
         </div>
         <div className="meal-display">
-          <p>meal display</p>
+          {mealCards.map((_, index) => (
+            <Mealcard key={index} />
+          ))}
         </div>
       </div>
     </div>
