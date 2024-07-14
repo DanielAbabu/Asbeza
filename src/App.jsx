@@ -5,8 +5,8 @@ import Navbar from './components/navbar/Navbar';
 import Login from './pages/login/Login';
 import Meal from './pages/meal/Meal';
 import Ingredient from './pages/ingredient/Ingredient';
-import Signin from './pages/signin/Signin';
 import './styles/global.css'
+import Signup from './pages/signup/Signup';
 
 import {
   createBrowserRouter,
@@ -51,8 +51,8 @@ export default function App() {
       element: <Login/>
     },
     {
-      path: "/signin",
-      element: <Signin/>
+      path: "/Signup",
+      element: <Signup/>
     }
   ]);
 

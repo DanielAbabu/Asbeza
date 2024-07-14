@@ -1,4 +1,6 @@
 import "./navbar.css"
+import { MdOutlineShoppingCart } from "react-icons/md";
+
 
 export default function Navbar(){
     return(
@@ -11,8 +13,8 @@ export default function Navbar(){
             </div>
             <div className="right">
 
-                <img className="cart" src="" alt="" />
-                <div className="signin"><a href="/signin">Sign in</a></div>
+                <MdOutlineShoppingCart/>
+                <div className="signin"><a href="">Sign in</a></div>
                 <img className="profile" src="./src\assets\profile.jpg" alt="" />
             </div>
         </div>

@@ -1,7 +1,7 @@
-import "./signin.css"
+import "./signup.css"
 
-export default function Signin(){
+export default function Signup(){
     return(
-        <div className="signin">signin</div>
+        <div className="signup">signup</div>
     )
 }
