@@ -17,68 +17,14 @@
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    position: relative;
     padding-right: 30px;
 }
-.trending {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    border-radius: 10px;
-    overflow: hidden;
-}
-.trending-text {
-    background-image:url("src/assets/homebg2.png");
-    background-size:cover ;
-    background-position: center;
-    color:white;
-    padding: 10px;
-    width: 130%;
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start;
-    justify-content: space-between;
-}
-.trending-text h2 {
-    margin: 15px 45px;
-}
-.trending-details {
-    margin: 0px 5px 20px 45px ;
-}
-.trending-details h3 {
-    margin-bottom: 3px;
-}
-.trending img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.meal-ingrediants {
+
+.meal-ingrediants-wrapper {
     width: 40%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
     box-sizing: border-box;
-    border-radius: 10px;
-    overflow: hidden;
-}
-.ingrediant-details {
-    background-image:url("src/assets/homebg1.png");
-    background-size:cover ;
-    background-position: center;
-    color:white;
-    padding: 10px;
-    width: 100%;
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-}
-.meal-ingrediants img {
-    width: 100%;
-    height: 60%;
-    object-fit: cover;
+    
 }
 .meal-page-bottom {
     display: flex;

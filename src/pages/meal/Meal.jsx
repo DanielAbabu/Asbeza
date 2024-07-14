@@ -2,29 +2,18 @@ import "./meal.css";
 import { HiOutlineAdjustmentsHorizontal } from "react-icons/hi2";
 import { CiSearch } from "react-icons/ci";
 import Mealcard from "../../components/mealcard/Mealcard";
+import Trending from "../../components/trending/Trending";
+import MealIngrediants from "../../components/MealIngrediants/MealIngrediants";
 export default function Meal() {
   const mealCards = Array.from({ length: 20 });
   return (
     <div className="meal-page">
       <div className="meal-page-top">
         <div className="trending-wrapper">
-          <div className="trending">
-            <div className="trending-text">
-              <h2> Trending Meal</h2>
-              <div className="trending-details">
-                <h3>Smoked beef</h3>
-                <p>Meat , Chicken, Onion, Spice</p>
-              </div>
-            </div>
-            <img src="src\assets\steak.jpg" alt="beef" />
-          </div>
+          <Trending />
         </div>
-
-        <div className="meal-ingrediants">
-          <div className="ingrediant-details">
-            <h2> Choose Ingrediants</h2>
-          </div>
-          <img src="src\assets\steak.jpg" alt="beef" />
+        <div className="meal-ingrediants-wrapper">
+          <MealIngrediants />
         </div>
       </div>
 
