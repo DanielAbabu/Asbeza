@@ -1,0 +1,12 @@
+.checkout-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 5px 20px;
+  align-items: center;
+  justify-content: center;
+}
+.checkoutprocess-wrapper {
+  width: 70%;
+  margin: 10px;
+}

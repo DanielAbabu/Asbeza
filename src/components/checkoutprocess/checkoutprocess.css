@@ -1,0 +1,12 @@
+.checkout-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 8px;
+}
+.checkout-top a {
+  font-weight: 500;
+}
