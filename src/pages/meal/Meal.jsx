@@ -1,36 +1,22 @@
 import "./meal.css";
-import { HiOutlineAdjustmentsHorizontal } from "react-icons/hi2";
-import { CiSearch } from "react-icons/ci";
 import Mealcard from "../../components/mealcard/Mealcard";
 import Trending from "../../components/trending/Trending";
 import MealIngrediants from "../../components/MealIngrediants/MealIngrediants";
+import Search from "../../components/search/Search";
 export default function Meal() {
   const mealCards = Array.from({ length: 20 });
   return (
     <div className="meal-page">
       <div className="meal-page-top">
         <div className="trending-wrapper">
-          <Trending />
+          <Trending name="Smoked Beef" ing="Meat, Chicken, Onion, Spices" />
         </div>
-        <div className="meal-ingrediants-wrapper">
-          <MealIngrediants />
-        </div>
+        <MealIngrediants title="Choose Ingredient" link="ingredient" />
       </div>
 
       <div className="meal-page-bottom">
-        <div className="meal-search">
-          <p>Find Your Meal</p>
-          <div className="search-right">
-            <div className="search-input">
-              <input type="text" placeholder="what are you looking for" />
-              <span>
-                <CiSearch />
-              </span>
-            </div>
-            <span>
-              <HiOutlineAdjustmentsHorizontal className="adjust-icon" />
-            </span>
-          </div>
+        <div className="search-wrapper">
+          <Search item="Meal" />
         </div>
         <div className="meal-display">
           {mealCards.map((_, index) => (

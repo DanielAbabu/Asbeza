@@ -1,39 +1,43 @@
-.meal-ingrediants {
-    position: relative;
-    height: 100%;
-    width: 100%;
-  }
-  
-  .gradient-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 48, 50, 1), rgba(0, 48, 50, 0.9),  rgba(0, 48, 50, 0.6), rgba(0, 48, 50, 0)); 
-    border-radius: 10px; 
-    z-index: 1; 
-  }
-  
-  .ingrediant-details {
-    position: relative; 
-    z-index: 2; 
-    color: white;
-    padding: 10px;
-    border-radius: 10px; 
-  }
-  
-  .ingrediant-details h2 {
-    margin: 15px 45px;
-  }
-  
-  .meal-ingrediants img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px; 
+.ingredient-link {
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
-  
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 48, 50, 1),
+    rgba(0, 48, 50, 0.9),
+    rgba(0, 48, 50, 0.6),
+    rgba(0, 48, 50, 0)
+  );
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.ingrediant-details {
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.ingrediant-details h2 {
+  margin: 15px 45px;
+}
+
+.meal-ingrediants img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}

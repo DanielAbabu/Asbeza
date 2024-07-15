@@ -1,7 +1,8 @@
 .navbar {
-    z-index: 1; 
+    z-index: 1000; 
 }
   
 .contentcontainer {
-    padding-top: 110px; 
+    padding-top: 106px; 
+    
 }
