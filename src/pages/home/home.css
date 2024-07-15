@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
 }
+
 .welcome{
     display: flex;
     background-color: var(--g1);
@@ -11,7 +12,7 @@
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
-    margin: 130px 110px 90px 110px;
+    margin: 30px 110px 90px 110px;
     width: 1230px;
     height: 560px;
     color: white;
@@ -54,6 +55,7 @@
 .trend {
     width: 100%;
     padding: 45px 110px;
+    margin-bottom: 50px;
     display: flex;
     align-items: center;
     flex-direction: column;

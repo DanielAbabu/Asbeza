@@ -7,7 +7,7 @@ export default function Navbar(){
         <div className="navbar">
             <div className="logo">ASBEZA</div>
             <div className="page">
-                <a className="home" href="/home">Home</a>
+                <a className="home" href="/">Home</a>
                 <a className="meal" href="/meal">Meal</a>
                 <a className="ingredient" href="/ingredient">Ingredient</a>
             </div>
