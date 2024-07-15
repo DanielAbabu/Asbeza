@@ -1,6 +1,6 @@
 import React from "react";
 import "./trending.css";
-export default function Trending({ name, ing }) {
+export default function Trending({ name, ing, src, alt }) {
   return (
     <a href="" className="trending-link">
       <div className="trending">
@@ -12,7 +12,7 @@ export default function Trending({ name, ing }) {
             <p>{ing}</p>
           </div>
         </div>
-        <img src="src\assets\steak.jpg" alt="beef" />
+        <img src={src} alt={alt} />
       </div>
     </a>
   );

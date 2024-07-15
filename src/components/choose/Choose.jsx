@@ -1,7 +1,7 @@
 import React from "react";
-import "./mealingrediants.css";
+import "./choose.css";
 
-export default function MealIngrediants({ title = "", link = "" }) {
+export default function Choose({ title = "", link = "", src }) {
   return (
     <a href={link} className="ingredient-link">
       <div className="meal-ingrediants">
@@ -9,7 +9,7 @@ export default function MealIngrediants({ title = "", link = "" }) {
           <h2> {title}</h2>
         </div>
         <div className="gradient-overlay"></div>
-        <img src="src/assets/steak.jpg" alt="beef" />
+        <img src={src} alt="beef" />
       </div>
     </a>
   );
