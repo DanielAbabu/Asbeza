@@ -1,8 +1,10 @@
 import React from "react";
 import "./trending.css";
+import { Link } from "react-router-dom";
+
 export default function Trending({ name, ing, src, alt }) {
   return (
-    <a href="" className="trending-link">
+    <Link to="">
       <div className="trending">
         <div className="gradient-overlay"></div>
         <div className="trending-text">
@@ -14,6 +16,6 @@ export default function Trending({ name, ing, src, alt }) {
         </div>
         <img src={src} alt={alt} />
       </div>
-    </a>
+    </Link>
   );
 }

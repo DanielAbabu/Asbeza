@@ -1,6 +1,7 @@
 import React from "react";
 import "./ingrediantcard.css";
 import OrderAdjust from "../orderadjust/OrderAdjust";
+import { Link } from "react-router-dom";
 
 export default function IngrediantCard({ price, item }) {
   return (
@@ -13,9 +14,9 @@ export default function IngrediantCard({ price, item }) {
       <div className="ingrediant-order-details">
         <OrderAdjust />
         <p>{price} Birr</p>
-        <button className="add">
-          <a href="">Add</a>
-        </button>
+        <Link to="">
+          <button className="add">Add</button>
+        </Link>
       </div>
     </div>
   );

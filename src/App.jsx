@@ -12,6 +12,7 @@ import Checkout from "./pages/checkout/Checkout";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Profile from "./pages/profile/Profile";
 import CheckoutProcess from "./components/checkoutprocess/CheckoutProcess";
+import EditProfile from "./pages/editprofile/EditProfile";
 
 export default function App() {
   const Layout = () => {
@@ -50,6 +51,10 @@ export default function App() {
         {
           path: "/profile",
           element: <Profile />,
+        },
+        {
+          path: "/editprofile",
+          element: <EditProfile />,
         },
         {
           path: "/checkout",
