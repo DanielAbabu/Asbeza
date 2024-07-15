@@ -7,6 +7,7 @@ import Meal from './pages/meal/Meal';
 import Ingredient from './pages/ingredient/Ingredient';
 import './styles/global.css'
 import Signup from './pages/signup/Signup';
+import Mealdetail from './pages/mealdetail/Mealdetail';
 
 import {
   createBrowserRouter,
@@ -40,6 +41,10 @@ export default function App() {
         {
           path: "/meal",
           element: <Meal/>,
+        },
+        {
+          path: "/mealdetail",
+          element: <Mealdetail/>,
         },
         {
           path: "/ingredient",

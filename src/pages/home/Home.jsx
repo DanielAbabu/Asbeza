@@ -31,7 +31,14 @@ export default function Home(){
 
             </div>
 
-            
+            <h1>How to Order?</h1>
+            <div className="offer">
+                <Docard/>
+                <Docard/>
+                <Docard/>
+                <Docard/>
+            </div>
+
         </div>
     )
 }

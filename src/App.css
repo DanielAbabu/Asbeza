@@ -1,8 +1,10 @@
 .navbar {
-    z-index: 1000; 
+  z-index: 5;
 }
-  
+
 .contentcontainer {
-    padding-top: 106px; 
-    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 110px;
 }
