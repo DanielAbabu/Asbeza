@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 a{
@@ -12,7 +13,6 @@ a{
 }
 
 .main{
-    font-family: "Poppins", sans-serif;
     background-color: var(--mainbg);
     font-weight: 400;
     color: black;

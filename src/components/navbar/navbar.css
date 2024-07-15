@@ -1,7 +1,7 @@
 @import "src/styles/variable.css";
 @font-face {
     font-family: 'Khuja';
-    src: url('src/assets/Khuja.otf') format('opentype');
+    src: url('../../assets/Fonts/Khuja-Uppercase-BF668c04acd5509.otf') format('opentype');
 }
 
 .navbar{
