@@ -1,70 +1,70 @@
-import './App.css'
-import Home from './pages/home/Home'
-import Footer from './components/footer/Footer';
-import Navbar from './components/navbar/Navbar';
-import Login from './pages/login/Login';
-import Meal from './pages/meal/Meal';
-import Ingredient from './pages/ingredient/Ingredient';
-import './styles/global.css'
-import Signup from './pages/signup/Signup';
-import Mealdetail from './pages/mealdetail/Mealdetail';
+import "./App.css";
+import Home from "./pages/home/Home";
+import Footer from "./components/footer/Footer";
+import Navbar from "./components/navbar/Navbar";
+import Login from "./pages/login/Login";
+import Meal from "./pages/meal/Meal";
+import Ingredient from "./pages/ingredient/Ingredient";
+import "./styles/global.css";
+import Signup from "./pages/signup/Signup";
+import Mealdetail from "./pages/mealdetail/Mealdetail";
 
-import {
-  createBrowserRouter,
-  Outlet,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+import Profile from "./pages/profile/Profile";
 
 export default function App() {
-  
-  const Layout = ()=>{
-    return(
-      <div className='main'>
-        <Navbar/>
+  const Layout = () => {
+    return (
+      <div className="main">
+        <Navbar />
         <div className="contentcontainer">
-            <Outlet/>
+          <Outlet />
         </div>
         <Footer />
       </div>
-    )
-  }
+    );
+  };
 
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Layout/>,
+      element: <Layout />,
       children: [
         {
-          path:"/",
-          element: <Home/>
+          path: "/",
+          element: <Home />,
         },
         {
           path: "/meal",
-          element: <Meal/>,
+          element: <Meal />,
         },
         {
           path: "/mealdetail",
-          element: <Mealdetail/>,
+          element: <Mealdetail />,
         },
         {
           path: "/ingredient",
-          element: <Ingredient/>,
-        },]   
+          element: <Ingredient />,
+        },
+        {
+          path: "/profile",
+          element: <Profile />,
+        },
+      ],
     },
     {
       path: "/login",
-      element: <Login/>
+      element: <Login />,
     },
     {
       path: "/Signup",
-      element: <Signup/>
-    }
+      element: <Signup />,
+    },
   ]);
 
-  
-  return (        
+  return (
     <>
-      <RouterProvider router={router}/>
-    </>    
-  )
+      <RouterProvider router={router} />
+    </>
+  );
 }
