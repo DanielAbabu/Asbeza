@@ -1,7 +1,7 @@
 @import "src/styles/variable.css";
 
 .profile-container {
-  width: 800px;
+  width: 60%;
   margin: 22px auto;
   border: 1px solid #ccc;
   border-radius: 10px;

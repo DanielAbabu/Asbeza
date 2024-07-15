@@ -8,9 +8,10 @@ import Ingredient from "./pages/ingredient/Ingredient";
 import "./styles/global.css";
 import Signup from "./pages/signup/Signup";
 import Mealdetail from "./pages/mealdetail/Mealdetail";
-
+import Checkout from "./pages/checkout/Checkout";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Profile from "./pages/profile/Profile";
+import CheckoutProcess from "./components/checkoutprocess/CheckoutProcess";
 
 export default function App() {
   const Layout = () => {
@@ -49,6 +50,14 @@ export default function App() {
         {
           path: "/profile",
           element: <Profile />,
+        },
+        {
+          path: "/checkout",
+          element: <Checkout />,
+        },
+        {
+          path: "/checkoutprocess",
+          element: <CheckoutProcess />,
         },
       ],
     },
