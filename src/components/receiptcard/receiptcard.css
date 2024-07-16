@@ -1,0 +1,37 @@
+.receiptcard {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.custom-table thead th {
+    border-bottom: 2px solid #ddd;
+    text-align: left;
+}
+
+.custom-table tbody td {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+}
+
+.custom-table tbody tr.total-row td {
+    font-weight: bold;
+    border-bottom: none;
+}
+.receiptcard th ,.receiptcard td{
+    width: auto;
+    min-width: 160px;
+    height: 40px;
+}
+
+
+.receiptcard .tit{
+    font-weight: 600;
+    margin-top: 20px;
+}

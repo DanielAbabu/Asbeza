@@ -9,7 +9,7 @@ export default function Navbar(){
             <div className="page">
                 <a className="home" href="/">Home</a>
                 <a className="meal" href="/meal">Meal</a>
-                <a className="ingredient" href="/ingredient">Ingredient</a>
+                <a className="ingredientt" href="/ingredient">Ingredient</a>
             </div>
             <div className="right">
                 <MdOutlineShoppingCart size={"30px"} />

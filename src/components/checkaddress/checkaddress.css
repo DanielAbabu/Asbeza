@@ -1,0 +1,55 @@
+@import "src/styles/variable.css";
+.checkaddress{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 1000px;
+    background-color: white;
+    padding: 5px 40px;
+    margin: 20px;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+}
+
+
+.checkaddress h2{
+    margin: 20px 0 10px 0;
+}
+
+.checkaddress .contenn{
+    width: 100%;
+}
+
+.checkaddress .btnnn{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 10px;
+}
+
+.checkaddress .checkout-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+
+}
+.checkaddress .checkout-top span {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 8px;
+  font-weight: 500;
+}
+
+.checkaddress .addrs{
+    background-color: var(--bg);
+}
+.checkaddress .paym{
+    background-color: white;
+}
+.checkaddress .rece{
+    background-color: white;
+}

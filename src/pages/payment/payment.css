@@ -1,0 +1,45 @@
+.payment{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 1000px;
+    min-height: 500px;
+    background-color: white;
+    padding: 5px 40px;
+    margin: 20px;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+}
+
+.payment .checkout-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+  
+  }
+  .payment .checkout-top span {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 8px;
+    font-weight: 500;
+  }
+
+  .payment .btnnn{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 10px;
+}
+.payment .addrs{
+    background-color: var(--g2);
+}
+.payment .paym{
+    background-color: var(--bg);
+}
+.payment .rece{
+    background-color: white;
+}
