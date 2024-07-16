@@ -14,7 +14,6 @@ import Profile from "./pages/profile/Profile";
 import Payment from "./pages/payment/Payment";
 import CheckAddress from "./components/checkaddress/CheckAddress";
 import Receipt from "./pages/receipt/Receipt";
-import CheckoutProcess from "./components/checkoutprocess/CheckoutProcess";
 import EditProfile from "./pages/editprofile/EditProfile";
 
 export default function App() {

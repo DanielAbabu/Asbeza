@@ -14,7 +14,7 @@ export default function Navbar(){
             <div className="right">
                 <MdOutlineShoppingCart size={"30px"} />
                 <div className="signin"><a href="">Sign in</a></div>
-                <div className="profile"><img  src="./src\assets\profile.jpg" alt="" /></div>
+                <div className="profil"><img  src="./src\assets\profile.jpg" alt="" /></div>
             </div>
         </div>
     )
