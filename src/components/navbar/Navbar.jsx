@@ -2,40 +2,55 @@ import { useState } from "react";
 import "./navbar.css";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import DropdownMenu from "../dropdownmenu/DropdownMenu";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { useAuth } from "../../contexts/AuthContext";
 
 export default function Navbar() {
   const [dropdownVisible, setDropdownVisible] = useState(false);
+  const { user } = useAuth();
 
   const toggleDropdown = () => {
     setDropdownVisible(!dropdownVisible);
   };
+
   return (
     <div className="navbar">
       <div className="logo">ASBEZA</div>
       <div className="page">
-        <Link className="home" to="/">
+        <NavLink
+          className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+          to="/"
+        >
           Home
-        </Link>
-        <Link className="meal" to="/meal">
+        </NavLink>
+        <NavLink
+          className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+          to="/meal"
+        >
           Meal
-        </Link>
-        <Link className="ingredientt" to="/ingredient">
+        </NavLink>
+        <NavLink
+          className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+          to="/ingredient"
+        >
           Ingredient
-        </Link>
+        </NavLink>
       </div>
       <div className="right">
         <MdOutlineShoppingCart size={"30px"} />
-        <div className="signin">
-          <Link href="">Sign in</Link>
-        </div>
-        <div className="profil" onClick={toggleDropdown}>
-          <img src="./src\assets\profile.jpg" alt="" />
-          <DropdownMenu
-            isVisible={dropdownVisible}
-            toggleDropdown={toggleDropdown}
-          />
-        </div>
+        {user ? (
+          <div className="profil" onClick={toggleDropdown}>
+            <img src={user.profilePic} alt="Profile" className="profile-pic" />
+            <DropdownMenu
+              isVisible={dropdownVisible}
+              toggleDropdown={toggleDropdown}
+            />
+          </div>
+        ) : (
+          <div className="signin">
+            <NavLink to="/signup">Sign up</NavLink>
+          </div>
+        )}
       </div>
     </div>
   );

@@ -19,6 +19,8 @@ import ReceiptHistory from "./pages/recieptHistory/RecieptHistory";
 import ReceiptDetail from "./pages/recieptdetail/ReceiptDetail";
 import AddMeal from "./pages/addmeal/AddMeal";
 import AddIngredient from "./pages/addingredient/AddIngredient";
+import { AuthProvider } from "./contexts/AuthContext";
+
 
 export default function App() {
 
@@ -91,7 +93,7 @@ export default function App() {
       element: <Login />,
     },
     {
-      path: "/Signup",
+      path: "/signup",
       element: <Signup />,
     },
     {
@@ -105,8 +107,8 @@ export default function App() {
   ]);
 
   return (
-    <>
+    <AuthProvider>
       <RouterProvider router={router} />
-    </>
+    </AuthProvider>
   );
 }

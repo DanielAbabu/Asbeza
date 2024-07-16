@@ -8,7 +8,8 @@ export default function CheckAddress() {
     <div className="checkaddress">
       <div className="checkout-top">
           <span className="addrs" >
-            Address
+            <a href="/address">Address</a>
+            
           </span>
           <span className="paym" >
             Payment
@@ -22,6 +23,10 @@ export default function CheckAddress() {
         <h2>Choose Location</h2>
         <GoogleApiWrapper/>
         <div className="btnnn">
+          <div>
+            <h4>Current Location</h4>
+            <span>Mexico Square St., Addis Ababa, Ethiopia</span>
+          </div>
           <a href="/payment">
           <FaChevronCircleRight 
               color={"#003032" } 

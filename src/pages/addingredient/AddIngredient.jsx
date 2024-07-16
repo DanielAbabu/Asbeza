@@ -57,7 +57,7 @@ export default function AddIngredient(){
   
     return(
         <div className="adding">
-          <div className="logo">ASBEZA</div>
+          <div className="logo"> ASBEZA</div>
           <div className="content">
               <div className="choice">
                 <div className="addm"><a href="/addmeal">Add Meal</a></div>
