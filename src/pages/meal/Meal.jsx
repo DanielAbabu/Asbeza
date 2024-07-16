@@ -18,7 +18,7 @@ export default function Meal() {
         </div>
         <Choose
           title="Choose Ingredient"
-          link="ingredient"
+          link="/ingredient"
           src={"src\\assets\\food3.png"}
         />
       </div>

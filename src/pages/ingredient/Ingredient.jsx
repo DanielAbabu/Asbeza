@@ -19,7 +19,7 @@ export default function Ingredient() {
         </div>
         <Choose
           title={"Choose Meal"}
-          link={"meal"}
+          link={"/meal"}
           src={"src\\assets\\food5.png"}
         />
       </div>

@@ -1,120 +1,58 @@
 @import "src/styles/variable.css";
 
-.profile-container {
-  width: 60%;
-  margin: 22px auto;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+.profile {
+  width: 45%;
+  border: 1px solid rgb(209, 200, 200);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+.profile .edit-button {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding-bottom: 30px;
+  flex-direction: row;
+  justify-content: end;
 }
-
-.profile-container h3 {
-  padding: 20px;
-  margin-bottom: 0;
-  width: 100%;
-  text-align: center;
-}
-
-.profile-form {
-  margin: 10px;
-  padding: 10px 30px 30px 30px;
-  width: 100%;
-  max-width: 600px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.form-group {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  width: 100%;
-  position: relative;
-}
-
-.form-group label {
-  margin-right: 20px;
-  width: 140px;
-  text-align: left;
-  flex-shrink: 0;
-}
-
-.form-group input[type="text"],
-.form-group input[type="password"] {
-  flex: 1;
-  padding: 5px 10px;
-  box-sizing: border-box;
-  height: 34px;
-  border: 1px solid gray;
-  border-radius: 6px;
-  color: black;
-  transition: transform 0.3s ease;
-}
-.form-group input[type="text"]:hover,
-.form-group input[type="password"]:hover,
-.image-upload-container:hover,
-button[type="submit"]:hover {
-  transform: scale(1.01);
-}
-
-.form-group .image-upload-label {
-  margin-right: 10px;
-  width: 140px;
-  text-align: left;
-  flex-shrink: 0;
-}
-
-.image-upload-container {
-  width: 100%;
-  height: 200px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 36px;
-  color: var(--g2);
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.image-upload-container input[type="file"] {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-.image-upload-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.error {
-  color: rgb(255, 0, 0);
-  font-size: 0.8em;
-  position: absolute;
-  right: 0;
-  bottom: -20px;
-}
-
-button[type="submit"] {
-  color: black;
-  cursor: pointer;
-  font-size: 15px;
+.edit-button button {
+  margin: 20px;
+  font-size: 14px;
+  width: 80px;
   font-weight: 500;
-  margin-top: 20px;
-  background-color: var(--g2);
-  padding: 7px 30px;
-  border-radius: 3px;
+  color: black;
   border: none;
-  transition: transform 0.3s ease;
-  align-self: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: var(--g2);
+  padding: 7px 25px;
+  border-radius: 3px;
+}
+.profile button:hover {
+  transform: scale(1.03);
+}
+.profile-main {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile img {
   width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+.profile-info {
+  margin: 50px;
+}
+.profile-info-item {
+  margin: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.profile-info-item .pfpinfo {
+  font-weight: 600;
+  margin-right: 80px;
 }
