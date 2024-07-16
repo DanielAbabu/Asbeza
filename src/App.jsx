@@ -1,3 +1,4 @@
+
 import "./App.css";
 import Home from "./pages/home/Home";
 import Footer from "./components/footer/Footer";
@@ -15,10 +16,11 @@ import CheckAddress from "./components/checkaddress/CheckAddress";
 import Receipt from "./pages/receipt/Receipt";
 
 export default function App() {
+
   const Layout = () => {
     return (
       <div className="main">
-        <Navbar />
+        <Navbar  />
         <div className="contentcontainer">
           <Outlet />
         </div>
