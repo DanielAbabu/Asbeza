@@ -1,5 +1,6 @@
 import "./payment.css"
 import { FaChevronCircleRight } from "react-icons/fa";
+import ChapaPayment from './../../components/chapa/ChapaPayment';
 
 
 export default function Payment(){
@@ -16,6 +17,11 @@ export default function Payment(){
                     Receipt
                 </span>
             </div>
+
+            <div className="payc">
+                <ChapaPayment/>
+            </div>
+
             <div className="btnnn">
                 <a href="/receipt">
                 <FaChevronCircleRight 
