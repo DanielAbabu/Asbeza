@@ -1,9 +1,9 @@
-.order-adjustment {
+.order-adjust {
   display: flex;
   align-items: center;
 }
-.order-adjustment .minus,
-.order-adjustment .plus {
+.order-adjust .minus-btn,
+.order-adjust .plus-btn {
   width: 17px;
   height: 17px;
   font-size: 19px;
@@ -18,11 +18,11 @@
   cursor: pointer;
   transition: transform 0.3s ease;
 }
-.order-adjustment .minus:hover,
-.order-adjustment .plus:hover {
-  transform: scale(1.025);
+.order-adjust .minus-btn:hover,
+.order-adjust .plus-btn:hover {
+  transform: scale(1.03);
 }
-.order-adjustment input[type="text"] {
+.order-adjust input[type="text"] {
   width: 50px;
   height: 22px;
   border-radius: 3px;

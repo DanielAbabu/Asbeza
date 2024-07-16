@@ -1,12 +1,21 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { CartContext } from "../../components/cartcontext/cartcontext";
 import "./mealdetail.css";
-import { CgAddR, CgRemoveR } from "react-icons/cg";
 import Ingred from "./../../components/Ingred/Ingred";
-import Popup from "../../components/popup/Popup";
 
 export default function Mealdetail() {
   const [amount, setAmount] = useState(1);
-  const [popupVisible, setPopupVisible] = useState(false);
+  const { addItemToCart } = useContext(CartContext);
+
+  const handleAddItem = () => {
+    const item = {
+      id: Date.now(),
+      item: "Cheese Burger",
+      amount: amount,
+      price: amount * 340,
+    };
+    addItemToCart(item);
+  };
 
   const increment = () => {
     setAmount(amount + 1);
@@ -17,21 +26,12 @@ export default function Mealdetail() {
       setAmount(amount - 1);
     }
   };
-  const togglePopup = () => {
-    setPopupVisible(!popupVisible);
-  };
 
   return (
     <div className="mealdetail">
-      <Popup
-        isVisible={popupVisible}
-        togglePopup={togglePopup}
-        meal={"cheese burger"}
-        amount={amount}
-      />
       <div
         className="pics"
-        style={{ backgroundImage: `url("./src/assets/food2.png")` }}
+        style={{ backgroundImage: `url('./src/assets/food2.png')` }}
       ></div>
       <div className="detail">
         <div className="txts">
@@ -64,7 +64,7 @@ export default function Mealdetail() {
             <span>Total Price</span>
             <span className="am">{amount * 340} Birr</span>
           </div>
-          <div className="btn" onClick={togglePopup}>
+          <div className="btn" onClick={handleAddItem}>
             Add
           </div>
         </div>
