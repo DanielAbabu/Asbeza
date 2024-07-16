@@ -45,36 +45,30 @@ export default function Navbar() {
         </NavLink>
       </div>
       <div className="right">
-        <MdOutlineShoppingCart size={"30px"} />
+        <MdOutlineShoppingCart size={"30px"} onClick={togglePopup}/>
+        <Popup
+          isVisible={popupVisible}
+          togglePopup={togglePopup}
+          items={cartItems}
+        />
+
         {user ? (
-          <div className="profil" onClick={toggleDropdown}>
-            <img src={user.profilePic} alt="Profile" className="profile-pic" />
-            <DropdownMenu
-              isVisible={dropdownVisible}
-              toggleDropdown={toggleDropdown}
-            />
-          </div>
+
+        <div className="profil" onClick={toggleDropdown}>
+        <img src="./src\assets\profile.jpg" alt="" />
+        <DropdownMenu
+          isVisible={dropdownVisible}
+          toggleDropdown={toggleDropdown}
+        />
+        </div>
         ) : (
           <div className="signin">
             <NavLink to="/signup">Sign up</NavLink>
           </div>
-        )}
-        <MdOutlineShoppingCart size={"30px"} onClick={togglePopup} />
-        <div className="signin">
-          <Link href="">Sign in</Link>
-        </div>
-        <div className="profil" onClick={toggleDropdown}>
-          <img src="./src\assets\profile.jpg" alt="" />
-          <Popup
-            isVisible={popupVisible}
-            togglePopup={togglePopup}
-            items={cartItems}
-          />
-          <DropdownMenu
-            isVisible={dropdownVisible}
-            toggleDropdown={toggleDropdown}
-          />
-        </div>
+       )} 
+
+
+
       </div>
     </div>
   );
