@@ -10,7 +10,18 @@
   align-items: flex-start;
   z-index: 10;
 }
-
+.empty-cart {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+.empty-cart button {
+  margin: 30px;
+  background-color: var(--g2);
+  padding: 5px 25px;
+  border-radius: 3px;
+  border: none;
+}
 .popup-overlay::before {
   content: "";
   position: absolute;

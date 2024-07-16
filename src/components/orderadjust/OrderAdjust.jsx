@@ -1,30 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import "./orderadjust.css";
 
-export default function OrderAdjust() {
-  const [quantity, setQuantity] = useState(1);
-  const handleMinus = () => {
-    if (quantity > 1) {
-      setQuantity(quantity - 1);
-    }
-  };
-  const handlePlus = () => {
-    setQuantity(quantity + 1);
-  };
+export default function OrderAdjust({ increment, decrement, amount }) {
   return (
-    <div className="order-adjustment">
-      <button className="minus" onClick={handleMinus}>
+    <div className="order-adjust">
+      <button onClick={decrement} className="minus-btn">
         -
       </button>
-      <input
-        type="text"
-        className="quantity"
-        value={quantity}
-        onChange={(e) =>
-          setQuantity(Math.max(1, parseInt(e.target.value) || 1))
-        }
-      />
-      <button className="plus" onClick={handlePlus}>
+      <input type="text" value={amount} readOnly />
+      <button onClick={increment} className="plus-btn">
         +
       </button>
     </div>

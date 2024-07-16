@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./dropdownmenu.css";
 
 const DropdownMenu = ({ isVisible, toggleDropdown }) => {
+  const dropdownRef = useRef(null);
+
   return (
     isVisible && (
-      <div className="dropdown-menu">
+      <div className="dropdown-menu" ref={dropdownRef}>
         <Link to="/profile" onClick={toggleDropdown}>
           Profile
         </Link>
@@ -19,5 +21,4 @@ const DropdownMenu = ({ isVisible, toggleDropdown }) => {
     )
   );
 };
-
 export default DropdownMenu;

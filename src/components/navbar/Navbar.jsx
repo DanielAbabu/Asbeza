@@ -1,16 +1,24 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import "./navbar.css";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import DropdownMenu from "../dropdownmenu/DropdownMenu";
+import { Link } from "react-router-dom";
+import Popup from "../../components/popup/Popup";
+import { CartContext } from "../cartcontext/cartcontext";
 import { NavLink } from "react-router-dom";
 import { useAuth } from "../../contexts/AuthContext";
 
 export default function Navbar() {
   const [dropdownVisible, setDropdownVisible] = useState(false);
+  const [popupVisible, setPopupVisible] = useState(false);
+  const { cartItems } = useContext(CartContext);
   const { user } = useAuth();
 
   const toggleDropdown = () => {
     setDropdownVisible(!dropdownVisible);
+  };
+  const togglePopup = () => {
+    setPopupVisible(!popupVisible);
   };
 
   return (
@@ -51,6 +59,22 @@ export default function Navbar() {
             <NavLink to="/signup">Sign up</NavLink>
           </div>
         )}
+        <MdOutlineShoppingCart size={"30px"} onClick={togglePopup} />
+        <div className="signin">
+          <Link href="">Sign in</Link>
+        </div>
+        <div className="profil" onClick={toggleDropdown}>
+          <img src="./src\assets\profile.jpg" alt="" />
+          <Popup
+            isVisible={popupVisible}
+            togglePopup={togglePopup}
+            items={cartItems}
+          />
+          <DropdownMenu
+            isVisible={dropdownVisible}
+            toggleDropdown={toggleDropdown}
+          />
+        </div>
       </div>
     </div>
   );
