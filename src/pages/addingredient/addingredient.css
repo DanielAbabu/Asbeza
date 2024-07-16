@@ -1,6 +1,6 @@
 @import "src/styles/variable.css";
 
-.addmeal{
+.adding{
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -8,10 +8,10 @@
     align-items: center;
     background-color: rgb(242, 246, 248);
 }
-.addmeal .logo{
+.adding .logo{
     margin: 40px;
 }
-.addmeal .content{
+.adding .content{
     width: 80%;
     background-color: white;
     padding: 20px;
@@ -21,44 +21,24 @@
     border-radius: 15px;
     margin-bottom: 50px;
 }
-.addmeal .choice{
+.adding .choice{
     display: flex;
     width: 100%;
     margin-bottom: 20px;
 }
 
-.addmeal .addm{
+.adding .addi{
     padding: 10px 70px;
     background-color: var(--g2);
 }
 
 
-.addmeal .addi{
+.adding .addm{
     padding: 10px 70px;
     background-color: var(--bg);
 }
-.addmeal .dt1{
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
 
-.addmeal .dt11{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    width: 400px;
-    margin-right: 80px;
-    height: 250px;
-}
 
-.addmeal .dtt3{
-    width: 1000px;
-}
-
-.addmeal .dtt3{
-    display: flex;
-    flex-direction: column;
-    width: 900px;
-    height: 80px;
+.adding .kkkk{
+    margin-top: 50px;
 }

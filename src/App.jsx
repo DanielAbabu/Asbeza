@@ -17,6 +17,7 @@ import EditProfile from "./pages/editprofile/EditProfile";
 import ReceiptHistory from "./pages/recieptHistory/RecieptHistory";
 import ReceiptDetail from "./pages/recieptdetail/ReceiptDetail";
 import AddMeal from "./pages/addmeal/AddMeal";
+import AddIngredient from "./pages/addingredient/AddIngredient";
 import { CartProvider } from "./components/cartcontext/cartcontext";
 
 export default function App() {
@@ -96,6 +97,10 @@ export default function App() {
     {
       path: "/addmeal",
       element: <AddMeal />,
+    },
+    {
+      path: "/addingredient",
+      element: <AddIngredient />,
     },
   ]);
 
