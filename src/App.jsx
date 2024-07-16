@@ -15,6 +15,9 @@ import Payment from "./pages/payment/Payment";
 import CheckAddress from "./components/checkaddress/CheckAddress";
 import Receipt from "./pages/receipt/Receipt";
 import EditProfile from "./pages/editprofile/EditProfile";
+import ReceiptHistory from "./pages/recieptHistory/RecieptHistory";
+import ReceiptDetail from "./pages/recieptdetail/ReceiptDetail";
+import AddMeal from "./pages/addmeal/AddMeal";
 
 export default function App() {
 
@@ -70,6 +73,14 @@ export default function App() {
         {
           path: "/receipt",
           element: <Receipt />,
+        },
+        {
+          path: "/receiptHistory",
+          element: <ReceiptHistory />,
+        },
+        {
+          path: "/receiptdetail",
+          element: <ReceiptDetail />,
         }
 
       ],
@@ -82,6 +93,10 @@ export default function App() {
       path: "/Signup",
       element: <Signup />,
     },
+    {
+      path: "/addmeal",
+      element: <AddMeal />,
+    }
   ]);
 
   return (
