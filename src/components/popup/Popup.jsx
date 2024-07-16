@@ -89,7 +89,7 @@ const Popup = ({ isVisible, togglePopup, meal, amount }) => {
       <div className="popup-overlay">
         <div className="popup-content">
           <div className="tabinfo">
-            <Table striped bordered hover className="custom-table">
+            <Table className="custom">
               <thead>
                 <tr>
                   <th>Item</th>

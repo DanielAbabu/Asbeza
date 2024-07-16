@@ -10,6 +10,7 @@
   align-items: flex-start;
   z-index: 10;
 }
+
 .popup-overlay::before {
   content: "";
   position: absolute;
@@ -20,9 +21,7 @@
   backdrop-filter: blur(1px);
   z-index: -1;
 }
-.totalprice {
-  font-weight: 400;
-}
+
 .popup-content {
   background: white;
   padding: 20px;
@@ -31,9 +30,30 @@
   margin: 7%;
   text-align: start;
 }
-th {
-  padding: 10px;
+
+.custom {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
 }
+
+.custom th,
+.custom td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid gray;
+}
+
+.totalprice {
+  font-weight: 400;
+}
+
+.total-row td {
+  font-weight: bold;
+  padding: 10px;
+  border-bottom: none;
+}
+
 .delete-btn {
   background-color: #ec221f;
   color: white;
@@ -43,6 +63,7 @@ th {
   border-radius: 5px;
   transition: transform 0.3s ease;
 }
+
 .checkout-btn,
 .close-btn {
   background-color: #003032;
@@ -54,8 +75,9 @@ th {
   text-align: center;
   border-radius: 3px;
   border: none;
-  margin: 10px 10px 10px 10px;
+  margin: 10px;
 }
+
 .close-btn {
   background-color: #ec221f;
 }

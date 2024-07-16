@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Trending({ name, ing, src, alt }) {
   return (
-    <Link to="">
+    <Link to="/mealdetail">
       <div className="trending">
         <div className="gradient-overlay"></div>
         <div className="trending-text">

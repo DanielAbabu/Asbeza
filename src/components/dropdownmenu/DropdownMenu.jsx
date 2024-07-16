@@ -9,7 +9,7 @@ const DropdownMenu = ({ isVisible, toggleDropdown }) => {
         <Link to="/profile" onClick={toggleDropdown}>
           Profile
         </Link>
-        <Link to="/receipt" onClick={toggleDropdown}>
+        <Link to="/receipthistory" onClick={toggleDropdown}>
           History
         </Link>
         <Link to="/login" onClick={toggleDropdown}>
