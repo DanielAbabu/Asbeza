@@ -1,4 +1,3 @@
-
 import "./App.css";
 import Home from "./pages/home/Home";
 import Footer from "./components/footer/Footer";
@@ -18,17 +17,19 @@ import EditProfile from "./pages/editprofile/EditProfile";
 import ReceiptHistory from "./pages/recieptHistory/RecieptHistory";
 import ReceiptDetail from "./pages/recieptdetail/ReceiptDetail";
 import AddMeal from "./pages/addmeal/AddMeal";
+import { CartProvider } from "./components/cartcontext/cartcontext";
 
 export default function App() {
-
   const Layout = () => {
     return (
       <div className="main">
-        <Navbar  />
-        <div className="contentcontainer">
-          <Outlet />
-        </div>
-        <Footer />
+        <CartProvider>
+          <Navbar />
+          <div className="contentcontainer">
+            <Outlet />
+          </div>
+          <Footer />
+        </CartProvider>
       </div>
     );
   };
@@ -57,7 +58,7 @@ export default function App() {
         {
           path: "/profile",
           element: <Profile />,
-        },        
+        },
         {
           path: "/editprofile",
           element: <EditProfile />,
@@ -81,8 +82,7 @@ export default function App() {
         {
           path: "/receiptdetail",
           element: <ReceiptDetail />,
-        }
-
+        },
       ],
     },
     {
@@ -96,7 +96,7 @@ export default function App() {
     {
       path: "/addmeal",
       element: <AddMeal />,
-    }
+    },
   ]);
 
   return (
