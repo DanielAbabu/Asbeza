@@ -17,7 +17,7 @@ export default function Ingredient() {
             alt={"smoked beef"}
           />
         </div>
-        <Choose
+        <Choose className="otherrat"
           title={"Choose Meal"}
           link={"/meal"}
           src={"src\\assets\\food5.png"}

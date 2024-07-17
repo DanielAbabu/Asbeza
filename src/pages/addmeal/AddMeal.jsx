@@ -62,8 +62,12 @@ export default function  AddMeal(){
           <div className="logo">ASBEZA</div>
           <div className="content">
               <div className="choice">
+                <div className="didi">
+
               <div className="addm"><a href="/addmeal">Add Meal</a></div>
               <div className="addi"><a href="/addingredient">Add Ingredient</a></div>
+                </div>
+                <div className="logout"><a href="/login">Logout</a> </div>
               </div>
               <div className="mealform">
           <Box display="flex" flexDirection="column" gap={2}>
