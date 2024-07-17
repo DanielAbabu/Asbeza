@@ -10,7 +10,7 @@ export default function Home(){
                     <div className="tit">Delicious Menus <br/> and Fresh Ingredients for Easy Home Cooking</div>
                     <div className="desc">Explore our enticing menus and fresh ingredients to bring delicious and fresh ingredients to your doorstep!</div>
                 </div>
-                <div className="pic"><img src="src\assets\food1.png" alt="food1" /></div>
+                <div className="pic"><img src="/food1.png" alt="food1" /></div>
             </div>
 
             <h1>What we offer?</h1>

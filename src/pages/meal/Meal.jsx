@@ -3,8 +3,8 @@ import Mealcard from "../../components/mealcard/Mealcard";
 import Trending from "../../components/trending/Trending";
 import Choose from "../../components/choose/Choose";
 import Search from "../../components/search/Search";
-import food1 from '../../assets/food1.png';
-import food3 from '../../assets/food3.png';
+import food1 from '/food1.png';
+import food3 from '/food3.png';
 
 export default function Meal() {
   const mealCards = Array.from({ length: 20 });
