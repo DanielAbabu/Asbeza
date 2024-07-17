@@ -55,3 +55,30 @@
     padding: 5px 25px;
     border-radius: 3px;
 }
+
+.nav-link {
+    text-decoration: none;
+    color: black; /* Default color */
+    padding: 8px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link.active {
+    color: limegreen; /* Highlight color */
+    font-weight: bold;
+  }
+  
+  .signup-btn {
+    text-decoration: none;
+    background-color: limegreen;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+  }
+  
+  .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }

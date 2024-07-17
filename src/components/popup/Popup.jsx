@@ -3,15 +3,21 @@ import { useNavigate } from "react-router-dom";
 import Table from "react-bootstrap/Table";
 import "./popup.css";
 import { CartContext } from "../cartcontext/cartcontext";
+import { useAuth } from "../../contexts/AuthContext";
 
 const Popup = ({ isVisible, togglePopup }) => {
   const navigate = useNavigate();
   const { cartItems, removeItemFromCart } = useContext(CartContext);
+  const { user } = useAuth();
   const popupRef = useRef(null);
 
   const handleNavigate = () => {
     togglePopup();
-    navigate("/payment");
+    if (user) {
+      navigate("/payment");
+    } else {
+      navigate("/login");
+    }
   };
 
   const totalPrice = cartItems.reduce((total, item) => total + item.price, 0);

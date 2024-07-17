@@ -7,8 +7,8 @@ const mapContainerStyle = {
 };
 
 const center = {
-  lat: -3.745,
-  lng: -38.523,
+  lat: 9.0098772,
+  lng: 38.7425322,
 };
 
 const GoogleApiWrapper = () => {
@@ -19,7 +19,7 @@ const GoogleApiWrapper = () => {
       <GoogleMap
         mapContainerStyle={mapContainerStyle}
         center={center}
-        zoom={10}
+        zoom={13}
       >
         <Marker position={center} />
       </GoogleMap>

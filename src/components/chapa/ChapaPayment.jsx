@@ -1,100 +1,75 @@
-import React, { useState } from 'react';
+const Chapa = require("chapa-node");
 
-const PaymentForm = () => {
-  const [amount, setAmount] = useState('100');
-  const [currency, setCurrency] = useState('ETB');
-  const [email, setEmail] = useState('abebech_bekele@gmail.com');
-  const [firstName, setFirstName] = useState('Bilen');
-  const [lastName, setLastName] = useState('Gizachew');
-  const [phoneNumber, setPhoneNumber] = useState('0912345678');
-  const [txRef, setTxRef] = useState('chewatatest-6669');
-  const [callbackUrl, setCallbackUrl] = useState('https://webhook.site/077164d6-29cb-40df-ba29-8a00e59a7e60');
-  const [returnUrl, setReturnUrl] = useState('https://www.google.com/');
-  const [result, setResult] = useState(null);
-  const [error, setError] = useState(null);
+const chapa = new Chapa("chapaKey");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+//separate your customization from the initialize function
+chapa.customize({
+  logo: "logo url",
+  description: "description about the app",
+  title: "my app title",
+});
 
-    const myHeaders = new Headers();
-    myHeaders.append("Authorization", "Bearer CHAPUBK_TEST-JT31tHejUILY5wjKZ7035CZExrBd26zD");
-    myHeaders.append("Content-Type", "application/json");
-
-    const raw = JSON.stringify({
-      amount,
-      currency,
-      email,
-      first_name: firstName,
-      last_name: lastName,
-      phone_number: phoneNumber,
-      tx_ref: txRef,
-      callback_url: callbackUrl,
-      return_url: returnUrl,
-      customization: {
-        title: "Payment for my favourite merchant",
-        description: "I love online payments"
-      }
-    });
-
-    const requestOptions = {
-      method: 'POST',
-      headers: myHeaders,
-      body: raw,
-      redirect: 'follow'
-    };
-
-    fetch("https://api.chapa.co/v1/transaction/initialize", requestOptions)
-      .then(response => response.text())
-      .then(result => setResult(result))
-      .catch(error => setError(error));
-  };
-
-  return (
-    <div>
-      <h1>Payment Form</h1>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Amount: </label>
-          <input type="text" value={amount} onChange={(e) => setAmount(e.target.value)} />
-        </div>
-        <div>
-          <label>Currency: </label>
-          <input type="text" value={currency} onChange={(e) => setCurrency(e.target.value)} />
-        </div>
-        <div>
-          <label>Email: </label>
-          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-        </div>
-        <div>
-          <label>First Name: </label>
-          <input type="text" value={firstName} onChange={(e) => setFirstName(e.target.value)} />
-        </div>
-        <div>
-          <label>Last Name: </label>
-          <input type="text" value={lastName} onChange={(e) => setLastName(e.target.value)} />
-        </div>
-        <div>
-          <label>Phone Number: </label>
-          <input type="text" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} />
-        </div>
-        <div>
-          <label>Transaction Reference: </label>
-          <input type="text" value={txRef} onChange={(e) => setTxRef(e.target.value)} />
-        </div>
-        <div>
-          <label>Callback URL: </label>
-          <input type="text" value={callbackUrl} onChange={(e) => setCallbackUrl(e.target.value)} />
-        </div>
-        <div>
-          <label>Return URL: </label>
-          <input type="text" value={returnUrl} onChange={(e) => setReturnUrl(e.target.value)} />
-        </div>
-        <button type="submit">Submit</button>
-      </form>
-      {result && <div><h2>Result</h2><pre>{result}</pre></div>}
-      {error && <div><h2>Error</h2><pre>{error.toString()}</pre></div>}
-    </div>
-  );
+//initialize payment
+const initializeInfo = {
+  amount: "1000",
+  currency: "ETB",
+  email: "abebe@kebede.com",
+  first_name: "Abebe",
+  last_name: "Kebede",
+  tx_ref: "tx-ref-A110000...",
+  return_url: "the return url after payment",
+  callback_url: "https://myapp.com/my-verify-endpoint/:tx_ref",
 };
 
-export default PaymentForm;
+chapa
+  .initialize(initializeInfo)
+  .then((response) => {
+    console.log(response);
+    /*if initialization was successfull response will look like this
+        {
+        "message": "Hosted Link",
+        "status": "success",
+        "data": {
+            "checkout_url": "https://checkout.chapa.co/checkout/payment/27291184910"
+        }
+
+        redirect users to this 'checkout_url' to complete the transaction
+    */
+  })
+  .catch((error) => {
+    console.log(error);
+  });
+
+//verify payment
+chapa
+  .verify("tx_ref")
+  .then((response) =>
+    /*after verifing the transaction do your logic.*/ console.log(response)
+  )
+  .catch((error) => console.log(error));
+
+//get banks
+chapa
+  .getBanks()
+  .then((banks) =>
+    /*supported banks with their bank code for transfer*/ console.log(banks)
+  )
+  .catch((err) => console.log(err));
+
+//transfer money
+const transferInfo = {
+  account_name: "Abebe Kebede",
+  account_number: "32423423",
+  amount: "100",
+  currency: "ETB",
+  beneficiary_name: "Kebede Abebe",
+  reference: "3241342142sfdd", //This a merchant’s uniques reference for the transfer, it can be used to query for the status of the transfe,
+  bank_code: "fe087651-4910-43af-b666-bbd393d8e81f" //from the getBanks,
+};
+
+chapa
+  .transfer(transferInfo)
+  .then((response) => {
+    console.log(response);
+  })
+  .catch((error) => console.log(error));

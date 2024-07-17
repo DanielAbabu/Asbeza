@@ -21,10 +21,22 @@
     border-radius: 15px;
     margin-bottom: 50px;
 }
-.addmeal .choice{
+.addmeal .choice, .addmeal .didi{
     display: flex;
     width: 100%;
     margin-bottom: 20px;
+}
+
+.addmeal .logout{
+    height: 40px;
+    padding: 2px 24px;
+    background-color: var(--g1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
 }
 
 .addmeal .addm{

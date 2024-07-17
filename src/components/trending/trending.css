@@ -1,11 +1,12 @@
 .trending {
     position: relative; 
-    height: 100%;
+    height: 300px;
     width: 100%;
     display: flex;
     flex-direction: row;
     border-radius: 10px;
     overflow: hidden;
+    padding: 30px 0;
 }
 
 .trending .gradient-overlay {
@@ -32,6 +33,7 @@
 
 .trending-text h2 {
     margin: 15px 45px;
+    font-size: 32px;
 }
 
 .trending-details {

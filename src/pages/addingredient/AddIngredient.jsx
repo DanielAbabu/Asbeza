@@ -57,11 +57,15 @@ export default function AddIngredient(){
   
     return(
         <div className="adding">
-          <div className="logo">ASBEZA</div>
+          <div className="logo"> ASBEZA</div>
           <div className="content">
-              <div className="choice">
-                <div className="addm"><a href="/addmeal">Add Meal</a></div>
-                <div className="addi"><a href="/addingredient">Add Ingredient</a></div>
+          <div className="choice">
+                <div className="didi">
+
+              <div className="addm"><a href="/addmeal">Add Meal</a></div>
+              <div className="addi"><a href="/addingredient">Add Ingredient</a></div>
+                </div>
+                <div className="logout"><a href="/login">Logout</a> </div>
               </div>
           <Box className="kkkk" display="flex" flexDirection="column" width={"400px"} gap={5}>
 

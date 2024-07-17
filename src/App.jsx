@@ -19,6 +19,7 @@ import ReceiptDetail from "./pages/recieptdetail/ReceiptDetail";
 import AddMeal from "./pages/addmeal/AddMeal";
 import AddIngredient from "./pages/addingredient/AddIngredient";
 import { CartProvider } from "./components/cartcontext/cartcontext";
+import { AuthProvider } from "./contexts/AuthContext";
 
 export default function App() {
   const Layout = () => {
@@ -40,73 +41,28 @@ export default function App() {
       path: "/",
       element: <Layout />,
       children: [
-        {
-          path: "/",
-          element: <Home />,
-        },
-        {
-          path: "/meal",
-          element: <Meal />,
-        },
-        {
-          path: "/mealdetail",
-          element: <Mealdetail />,
-        },
-        {
-          path: "/ingredient",
-          element: <Ingredient />,
-        },
-        {
-          path: "/profile",
-          element: <Profile />,
-        },
-        {
-          path: "/editprofile",
-          element: <EditProfile />,
-        },
-        {
-          path: "/payment",
-          element: <Payment />,
-        },
-        {
-          path: "/address",
-          element: <CheckAddress />,
-        },
-        {
-          path: "/receipt",
-          element: <Receipt />,
-        },
-        {
-          path: "/receiptHistory",
-          element: <ReceiptHistory />,
-        },
-        {
-          path: "/receiptdetail",
-          element: <ReceiptDetail />,
-        },
+        { path: "/", element: <Home /> },
+        { path: "/meal", element: <Meal /> },
+        { path: "/mealdetail", element: <Mealdetail /> },
+        { path: "/ingredient", element: <Ingredient /> },
+        { path: "/profile", element: <Profile /> },
+        { path: "/editprofile", element: <EditProfile /> },
+        { path: "/payment", element: <Payment /> },
+        { path: "/address", element: <CheckAddress /> },
+        { path: "/receipt", element: <Receipt /> },
+        { path: "/receiptHistory", element: <ReceiptHistory /> },
+        { path: "/receiptdetail", element: <ReceiptDetail /> },
       ],
     },
-    {
-      path: "/login",
-      element: <Login />,
-    },
-    {
-      path: "/Signup",
-      element: <Signup />,
-    },
-    {
-      path: "/addmeal",
-      element: <AddMeal />,
-    },
-    {
-      path: "/addingredient",
-      element: <AddIngredient />,
-    },
+    { path: "/login", element: <Login /> },
+    { path: "/signup", element: <Signup /> },
+    { path: "/addmeal", element: <AddMeal /> },
+    { path: "/addingredient", element: <AddIngredient /> },
   ]);
 
   return (
-    <>
+    <AuthProvider>
       <RouterProvider router={router} />
-    </>
+    </AuthProvider>
   );
 }

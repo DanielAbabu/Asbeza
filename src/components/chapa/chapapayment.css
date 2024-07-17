@@ -1,0 +1,14 @@
+.chapa{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.chapap  h1{
+    margin-top: 45px;
+
+}
+
+.chapap  div{
+    margin-top: 15px;
+}
