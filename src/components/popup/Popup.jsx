@@ -13,7 +13,7 @@ const Popup = ({ isVisible, togglePopup }) => {
   const handleNavigate = () => {
     togglePopup();
     if (user) {
-      navigate("/payment");
+      navigate("/address");
     } else {
       navigate("/login");
     }
