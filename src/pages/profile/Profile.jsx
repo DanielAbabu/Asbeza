@@ -12,7 +12,7 @@ export default function Profile({ src, name, num, mail }) {
       </div>
       <div className="profile-main">
         <img
-          src="src\assets\profile2.png"
+          src="\profile2.png"
           alt="profile pic"
           className="profile-img"
         />
