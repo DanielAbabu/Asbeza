@@ -80,7 +80,7 @@
 
 .signup .limg {
   background-color: var(--g2);
-  background-image: url("../../../src/assets/logg.png");
+  background-image: url("/logg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

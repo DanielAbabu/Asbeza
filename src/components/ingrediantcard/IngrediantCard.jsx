@@ -31,7 +31,7 @@ export default function IngrediantCard({ price, item }) {
   return (
     <div className="ingrediant-card">
       <div className="ingrediant-name">
-        <img src={"src/assets/tomato.png"} alt={"Tomatoes"} width="40px" />
+        <img src={"/tomato.png"} alt={"Tomatoes"} width="40px" />
         <p>{item}</p>
       </div>
 

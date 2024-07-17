@@ -31,7 +31,7 @@ export default function Mealdetail() {
     <div className="mealdetail">
       <div
         className="pics"
-        style={{ backgroundImage: `url('./src/assets/food2.png')` }}
+        style={{ backgroundImage: `url('/food2.png')` }}
       ></div>
       <div className="detail">
         <div className="txts">
