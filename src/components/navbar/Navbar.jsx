@@ -36,18 +36,18 @@ export default function Navbar() {
         <div className="signin">
           <Link href="">Sign in</Link>
         </div>
-        <div className="profil" onClick={toggleDropdown}>
-          <img src="./src\assets\profile.jpg" alt="" />
-          <Popup
-            isVisible={popupVisible}
-            togglePopup={togglePopup}
-            items={cartItems}
-          />
-          <DropdownMenu
-            isVisible={dropdownVisible}
-            toggleDropdown={toggleDropdown}
-          />
+        <div className="profil">
+          <img src="./src\assets\profile.jpg" alt="" onClick={toggleDropdown} />
         </div>
+        <DropdownMenu
+          isVisible={dropdownVisible}
+          toggleDropdown={toggleDropdown}
+        />
+        <Popup
+          isVisible={popupVisible}
+          togglePopup={togglePopup}
+          items={cartItems}
+        />
       </div>
     </div>
   );

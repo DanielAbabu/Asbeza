@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useEffect, useContext, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import Table from "react-bootstrap/Table";
 import "./popup.css";
@@ -7,6 +7,7 @@ import { CartContext } from "../cartcontext/cartcontext";
 const Popup = ({ isVisible, togglePopup }) => {
   const navigate = useNavigate();
   const { cartItems, removeItemFromCart } = useContext(CartContext);
+  const popupRef = useRef(null);
 
   const handleNavigate = () => {
     togglePopup();
@@ -15,10 +16,28 @@ const Popup = ({ isVisible, togglePopup }) => {
 
   const totalPrice = cartItems.reduce((total, item) => total + item.price, 0);
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (popupRef.current && !popupRef.current.contains(event.target)) {
+        togglePopup();
+      }
+    };
+
+    if (isVisible) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isVisible, togglePopup]);
+
   return (
     isVisible && (
       <div className="popup-overlay">
-        <div className="popup-content">
+        <div className="popup-content" ref={popupRef}>
           <div className="tabinfo">
             {cartItems.length > 0 ? (
               <Table className="custom">
