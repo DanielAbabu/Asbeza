@@ -6,9 +6,19 @@ import IngredientCard from "../../components/ingrediantcard/IngrediantCard";
 import Search from "../../components/search/Search";
 import food1 from '/food1.png';
 import food5 from '/food5.png';
-export default function Ingredient() {
-  const IngredientCards = Array.from({ length: 20 });
+import Ingsearch from "../../components/ingsearch/Ingsearch";
+import { useState } from "react";
+// const allTags = [...new Set(ingredients.flatMap((ingredient) => ingredient.tags))]; // Assuming ingredients also have tags
 
+export default function Ingredient() {
+  const [filteredIngredients, setFilteredIngredients] = useState(ingredients);
+
+  const handleSearch = (query) => {
+    const filtered = ingredients.filter((ingredient) =>
+      ingredient.name.toLowerCase().includes(query.toLowerCase())
+    );
+    setFilteredIngredients(filtered);
+  };
   return (
     <div className="ingredient">
       <div className="ingredient-top">
@@ -28,12 +38,19 @@ export default function Ingredient() {
       </div>
       <div className="ingredient-bottom">
         <div className="search-wrapper">
-          <Search item={"Ingredient"} />
+        <Ingsearch item="Ingredient"  onSearch={handleSearch} />
+
         </div>
         <div className="Ingredientcards-wrapper">
-          {ingredients.map((ingredi) => (
+
+          {filteredIngredients.length > 0 ? (
+          filteredIngredients.map((ingredi) => (
             <IngredientCard price={ingredi.price} item={ingredi.name} key={ingredi.id} imgg={ingredi.imgSrc} />
-          ))}
+
+          ))
+        ) : (
+          <p className="no-results">No ingredients found matching your search criteria.</p>
+        )}
         </div>
       </div>
     </div>

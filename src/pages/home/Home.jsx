@@ -1,6 +1,8 @@
 import "./home.css"
 import Docard from './../../components/docard/Docard';
 import Mealcard from './../../components/mealcard/Mealcard';
+import { meals } from "../../data";
+
 
 export default function Home(){
     return(
@@ -41,9 +43,29 @@ export default function Home(){
             <div className="trend">
                 <h1>Trending Meals</h1>
                 <div className="lis">
-                    <Mealcard/>
-                    <Mealcard/>
-                    <Mealcard/>
+                <Mealcard
+                key={1}
+                id={1}
+                image={meals[1].imgSrc}
+                title={meals[1].name}
+                description={meals[1].description}
+              />
+                <Mealcard
+                key={1}
+                id={1}
+                image={meals[1].imgSrc}
+                title={meals[1].name}
+                description={meals[1].description}
+              />
+                <Mealcard
+                key={1}
+                id={1}
+                image={meals[1].imgSrc}
+                title={meals[1].name}
+                description={meals[1].description}
+              />
+
+
                 </div>
                 <div className="expl">Explore meal</div>
 
