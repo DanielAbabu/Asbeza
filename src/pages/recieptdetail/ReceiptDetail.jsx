@@ -39,7 +39,7 @@ export default function ReceiptDetail() {
               <tr className="total-row">
                 <td className="font-weight-bold">Total Price</td>
                 <td></td>
-                <td className="font-weight-bold"> birr</td>
+                <td className="font-weight-bold"> 905 birr</td>
               </tr>
             </tbody>
           </Table>
