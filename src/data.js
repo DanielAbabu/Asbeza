@@ -7,7 +7,7 @@ export const meals = [
     preparationTime: "30 - 40 minutes",
     description: "with Bacon, Old Bay Fries, Caramelized Onion & Special Sauce",
     price: 340,
-    tags: ["main"],
+    tags: ["main", "nonfasting"],
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const meals = [
     preparationTime: "20 - 30 minutes",
     description: "Classic burger with melted cheese.",
     price: 280,
-    tags: ["main"],
+    tags: ["main", "nonfasting"],
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ export const meals = [
     preparationTime: "25 - 35 minutes",
     description: "Creamy pasta with grilled chicken.",
     price: 320,
-    tags: ["main"],
+    tags: ["main", "nonfasting"],
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ export const meals = [
     preparationTime: "30 - 40 minutes",
     description: "Loaded with fresh vegetables.",
     price: 250,
-    tags: ["main"],
+    tags: ["main", "fasting"],
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ export const meals = [
     preparationTime: "20 - 25 minutes",
     description: "Perfectly grilled salmon with lemon.",
     price: 450,
-    tags: ["main"],
+    tags: ["main", "nonfasting"],
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ export const meals = [
     preparationTime: "30 minutes",
     description: "Fresh pasta with seasonal vegetables.",
     price: 280,
-    tags: ["main"],
+    tags: ["main", "fasting"],
   },
   {
     id: 7,
@@ -67,7 +67,7 @@ export const meals = [
     preparationTime: "15 - 20 minutes",
     description: "Spicy beef tacos with fresh toppings.",
     price: 220,
-    tags: ["main"],
+    tags: ["main", "nonfasting"],
   },
   {
     id: 8,
@@ -77,7 +77,7 @@ export const meals = [
     preparationTime: "25 - 30 minutes",
     description: "Flavorful shrimp with fried rice.",
     price: 300,
-    tags: ["main"],
+    tags: ["main", "nonfasting"],
   },
   {
     id: 9,
@@ -87,7 +87,7 @@ export const meals = [
     preparationTime: "15 - 20 minutes",
     description: "Classic salad with grilled chicken.",
     price: 260,
-    tags: ["main"],
+    tags: ["main", "fasting"],
   },
   {
     id: 10,
@@ -97,7 +97,7 @@ export const meals = [
     preparationTime: "20 - 25 minutes",
     description: "Rich and creamy spaghetti dish.",
     price: 300,
-    tags: ["main"],
+    tags: ["main", "nonfasting"],
   },
   {
     id: 11,
@@ -107,7 +107,7 @@ export const meals = [
     preparationTime: "30 - 35 minutes",
     description: "Crispy fish with golden fries.",
     price: 400,
-    tags: ["main"],
+    tags: ["main", "fasting"],
   },
   {
     id: 12,
@@ -117,7 +117,7 @@ export const meals = [
     preparationTime: "30 - 40 minutes",
     description: "Creamy risotto with mushrooms.",
     price: 350,
-    tags: ["main"],
+    tags: ["main", "fasting"],
   },
   {
     id: 13,
@@ -127,17 +127,17 @@ export const meals = [
     preparationTime: "25 - 30 minutes",
     description: "Juicy lamb chops with herbs.",
     price: 500,
-    tags: ["main"],
+    tags: ["main", "nonfasting"],
   },
   {
     id: 14,
     name: "Falafel Wrap",
     ingredientIds: [14, 4, 1],
-    imgSrc: "/falafelwrap.jpg",
+    imgSrc: "/falafelwrap.jpeg",
     preparationTime: "15 - 20 minutes",
     description: "Healthy wrap with falafel.",
     price: 210,
-    tags: ["main"],
+    tags: ["main", "nonfasting"],
   },
   {
     id: 15,
@@ -147,7 +147,7 @@ export const meals = [
     preparationTime: "20 - 25 minutes",
     description: "Nutritious quinoa bowl with veggies.",
     price: 250,
-    tags: ["main"],
+    tags: ["main", "fasting"],
   },
   {
     id: 16,
@@ -157,7 +157,7 @@ export const meals = [
     preparationTime: "45 minutes",
     description: "Rich and moist chocolate cake.",
     price: 180,
-    tags: ["dessert"],
+    tags: ["dessert", "nonfasting"],
   },
   {
     id: 17,
@@ -167,7 +167,7 @@ export const meals = [
     preparationTime: "10 minutes",
     description: "Fresh fruit salad with honey.",
     price: 150,
-    tags: ["dessert"],
+    tags: ["dessert", "fasting"],
   },
   {
     id: 18,
@@ -177,37 +177,37 @@ export const meals = [
     preparationTime: "60 minutes",
     description: "Classic Italian dessert with coffee flavor.",
     price: 220,
-    tags: ["dessert"],
+    tags: ["dessert", "nonfasting"],
   },
   {
     id: 19,
     name: "Dinich Wot",
     ingredientIds: [11, 2, 22],
-    imgSrc: "/dinichwot.png",
+    imgSrc: "/dinichwet.jpg",
     preparationTime: "45 minutes",
     description: "Ethiopian potato stew with berbere spice.",
     price: 200,
-    tags: ["Ethiopian", "spicy", "main"],
+    tags: ["Ethiopian", "spicy", "main", "fasting"],
   },
   {
     id: 20,
     name: "Doro Wot",
     ingredientIds: [3, 2, 22, 23],
-    imgSrc: "/dorowot.jpg",
+    imgSrc: "/dorowet.png",
     preparationTime: "60 minutes",
     description: "Spicy Ethiopian chicken stew.",
     price: 350,
-    tags: ["Ethiopian", "spicy", "main"],
+    tags: ["Ethiopian", "spicy", "main", "nonfasting"],
   },
   {
     id: 21,
     name: "Siga Wot",
     ingredientIds: [24, 2, 22, 23],
-    imgSrc: "/sigawot.jpg",
+    imgSrc: "/sigawet.jpg",
     preparationTime: "60 minutes",
     description: "Spicy Ethiopian beef stew.",
     price: 400,
-    tags: ["Ethiopian", "spicy", "main"],
+    tags: ["Ethiopian", "spicy", "main", "nonfasting"],
   },
   {
     id: 22,
@@ -217,7 +217,7 @@ export const meals = [
     preparationTime: "30 minutes",
     description: "Ethiopian seasoned raw beef.",
     price: 300,
-    tags: ["Ethiopian", "spicy", "main"],
+    tags: ["Ethiopian", "spicy", "main", "nonfasting"],
   },
   {
     id: 23,
@@ -227,9 +227,10 @@ export const meals = [
     preparationTime: "30 minutes",
     description: "Ethiopian sautéed meat with spices.",
     price: 280,
-    tags: ["Ethiopian", "spicy", "main"],
+    tags: ["Ethiopian", "spicy", "main", "nonfasting"],
   },
 ];
+
 
 
 export const ingredients = [
@@ -243,7 +244,7 @@ export const ingredients = [
     id: 2,
     name: "Onions",
     price: 30,
-    imgSrc: "/onions.jpg",
+    imgSrc: "/onion.jpg",
   },
   {
     id: 3,
@@ -321,7 +322,7 @@ export const ingredients = [
     id: 15,
     name: "Chocolate",
     price: 50,
-    imgSrc: "/chocolate.jpg",
+    imgSrc: "/chocolate.jpeg",
   },
   {
     id: 16,
@@ -333,7 +334,7 @@ export const ingredients = [
     id: 17,
     name: "Sugar",
     price: 10,
-    imgSrc: "/sugar.jpg",
+    imgSrc: "/suger.jpg",
   },
   {
     id: 18,
@@ -385,4 +386,3 @@ export const ingredients = [
   },
 ];
 
-export { meals, ingredients };
