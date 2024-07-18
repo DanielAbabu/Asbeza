@@ -15,9 +15,27 @@ export default function Home(){
 
             <h1>What we offer?</h1>
             <div className="offer">
-                <Docard/>
-                <Docard/>
-                <Docard/>
+                <Docard 
+                    icon="lemon"
+                    title="Centralized Supply" 
+                    description="Consistent and reliable ingredient sourcing from a single platform."
+                />
+                <Docard 
+                    icon="basket"
+                    title="Flexible Orders" 
+                    description="Choose from meal-based or individual ingredient orders to fit your needs."
+                />
+                <Docard 
+                    icon="fruitBowl"
+                    title="Recipe & Customization" 
+                    description="Get recipe suggestions and customize your ingredients to suit your taste."
+                />
+                <Docard 
+                    icon="coolSpices"
+                    title="Convenient Delivery" 
+                    description="Enjoy the convenience of doorstep delivery for all your ingredient needs."
+                />
+
             </div>
 
             <div className="trend">
@@ -33,10 +51,21 @@ export default function Home(){
 
             <h1>How to Order?</h1>
             <div className="offer">
-                <Docard/>
-                <Docard/>
-                <Docard/>
-                <Docard/>
+            <Docard 
+                    icon="burger"
+                    title="Choose your favourite meal" 
+                    description="You can chose your favourite meal or specific ingredients with specified amount of order"
+                />
+                <Docard 
+                    icon="location"
+                    title="Select address and date" 
+                    description="You can chose your favourite meal or specific ingredients with specified amount of order"
+                />
+                <Docard 
+                    icon="cook"
+                    title="Enjoy your cooking" 
+                    description="You can chose your favourite meal or specific ingredients with specified amount of order"
+                />
             </div>
 
         </div>
