@@ -61,7 +61,7 @@ export default function Navbar() {
         {user ? (
           <div className="profil">
             <img
-              src="./src\assets\profile.jpg"
+              src="/profile.jpg"
               alt=""
               onClick={toggleDropdown}
             />
