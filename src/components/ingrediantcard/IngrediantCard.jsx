@@ -10,7 +10,7 @@ export default function IngrediantCard({ price, item }) {
 
   const handleAddItem = () => {
     const ingredient = {
-      id: Date.now(), // Unique id, you can use a better unique identifier
+      id: Date.now(),
       item: item,
       amount: amount,
       price: price * amount,
