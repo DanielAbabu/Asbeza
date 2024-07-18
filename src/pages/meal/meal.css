@@ -35,3 +35,8 @@
 .meal-display .mealcard {
   margin: 25px 15px 25px 15px;
 }
+
+
+.meal-display .no-results{
+  padding: 10px 30px 100px 0;
+}

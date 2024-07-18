@@ -1,0 +1,24 @@
+
+@import "src/styles/variable.css";
+
+.filterdrop-menu {
+
+  width: 200px;
+
+  overflow: hidden;
+}
+
+.filterdrop-menu {
+    padding: 5px 10px;
+
+    cursor: pointer;
+  }
+  
+  .filterdrop-menu.selected {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+  
+  
+  
