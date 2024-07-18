@@ -8,6 +8,7 @@ export const meals = [
     description: "with Bacon, Old Bay Fries, Caramelized Onion & Special Sauce",
     price: 340,
     tags: ["main", "nonfasting"],
+    recipeId: 1,
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ export const meals = [
     description: "Classic burger with melted cheese.",
     price: 280,
     tags: ["main", "nonfasting"],
+    recipeId: 2,
   },
   {
     id: 3,
@@ -28,6 +30,7 @@ export const meals = [
     description: "Creamy pasta with grilled chicken.",
     price: 320,
     tags: ["main", "nonfasting"],
+    recipeId: 3,
   },
   {
     id: 4,
@@ -38,6 +41,7 @@ export const meals = [
     description: "Loaded with fresh vegetables.",
     price: 250,
     tags: ["main", "fasting"],
+    recipeId: 4,
   },
   {
     id: 5,
@@ -48,6 +52,7 @@ export const meals = [
     description: "Perfectly grilled salmon with lemon.",
     price: 450,
     tags: ["main", "nonfasting"],
+    recipeId: 5,
   },
   {
     id: 6,
@@ -58,6 +63,7 @@ export const meals = [
     description: "Fresh pasta with seasonal vegetables.",
     price: 280,
     tags: ["main", "fasting"],
+    recipeId: 6,
   },
   {
     id: 7,
@@ -68,6 +74,7 @@ export const meals = [
     description: "Spicy beef tacos with fresh toppings.",
     price: 220,
     tags: ["main", "nonfasting"],
+    recipeId: 7,
   },
   {
     id: 8,
@@ -78,6 +85,7 @@ export const meals = [
     description: "Flavorful shrimp with fried rice.",
     price: 300,
     tags: ["main", "nonfasting"],
+    recipeId: 8,
   },
   {
     id: 9,
@@ -88,6 +96,7 @@ export const meals = [
     description: "Classic salad with grilled chicken.",
     price: 260,
     tags: ["main", "fasting"],
+    recipeId: 9,
   },
   {
     id: 10,
@@ -98,6 +107,7 @@ export const meals = [
     description: "Rich and creamy spaghetti dish.",
     price: 300,
     tags: ["main", "nonfasting"],
+    recipeId: 10,
   },
   {
     id: 11,
@@ -108,6 +118,7 @@ export const meals = [
     description: "Crispy fish with golden fries.",
     price: 400,
     tags: ["main", "fasting"],
+    recipeId: 11,
   },
   {
     id: 12,
@@ -118,6 +129,7 @@ export const meals = [
     description: "Creamy risotto with mushrooms.",
     price: 350,
     tags: ["main", "fasting"],
+    recipeId: 12,
   },
   {
     id: 13,
@@ -128,6 +140,7 @@ export const meals = [
     description: "Juicy lamb chops with herbs.",
     price: 500,
     tags: ["main", "nonfasting"],
+    recipeId: 13,
   },
   {
     id: 14,
@@ -138,6 +151,7 @@ export const meals = [
     description: "Healthy wrap with falafel.",
     price: 210,
     tags: ["main", "nonfasting"],
+    recipeId: 14,
   },
   {
     id: 15,
@@ -148,6 +162,7 @@ export const meals = [
     description: "Nutritious quinoa bowl with veggies.",
     price: 250,
     tags: ["main", "fasting"],
+    recipeId: 15,
   },
   {
     id: 16,
@@ -158,6 +173,7 @@ export const meals = [
     description: "Rich and moist chocolate cake.",
     price: 180,
     tags: ["dessert", "nonfasting"],
+    recipeId: 16,
   },
   {
     id: 17,
@@ -168,6 +184,7 @@ export const meals = [
     description: "Fresh fruit salad with honey.",
     price: 150,
     tags: ["dessert", "fasting"],
+    recipeId: 17,
   },
   {
     id: 18,
@@ -178,6 +195,7 @@ export const meals = [
     description: "Classic Italian dessert with coffee flavor.",
     price: 220,
     tags: ["dessert", "nonfasting"],
+    recipeId: 18,
   },
   {
     id: 19,
@@ -188,6 +206,7 @@ export const meals = [
     description: "Ethiopian potato stew with berbere spice.",
     price: 200,
     tags: ["Ethiopian", "spicy", "main", "fasting"],
+    recipeId: 19,
   },
   {
     id: 20,
@@ -198,6 +217,7 @@ export const meals = [
     description: "Spicy Ethiopian chicken stew.",
     price: 350,
     tags: ["Ethiopian", "spicy", "main", "nonfasting"],
+    recipeId: 20,
   },
   {
     id: 21,
@@ -208,6 +228,7 @@ export const meals = [
     description: "Spicy Ethiopian beef stew.",
     price: 400,
     tags: ["Ethiopian", "spicy", "main", "nonfasting"],
+    recipeId: 21,
   },
   {
     id: 22,
@@ -218,6 +239,7 @@ export const meals = [
     description: "Ethiopian seasoned raw beef.",
     price: 300,
     tags: ["Ethiopian", "spicy", "main", "nonfasting"],
+    recipeId: 22,
   },
   {
     id: 23,
@@ -228,6 +250,7 @@ export const meals = [
     description: "Ethiopian sautéed meat with spices.",
     price: 280,
     tags: ["Ethiopian", "spicy", "main", "nonfasting"],
+    recipeId: 23,
   },
 ];
 
@@ -385,4 +408,136 @@ export const ingredients = [
     imgSrc: "/butter.jpg",
   },
 ];
+
+export const recipes = {
+  1: [
+    "Preheat the smoker to 225°F (110°C).",
+    "Rub the beef with barbeque sauce, brown sugar, chili powder, and yellow mustard.",
+    "Smoke the beef for 4-5 hours, until it reaches an internal temperature of 195°F (90°C).",
+    "Rest the smoked beef for 30 minutes before slicing and serving with caramelized onions and special sauce."
+  ],
+  2: [
+    "Grill the beef patty to desired doneness.",
+    "Place the grilled patty on a toasted bun with melted cheese.",
+    "Serve with lettuce, tomatoes, and any desired condiments."
+  ],
+  3: [
+    "Cook the pasta in boiling water until al dente.",
+    "In a separate pan, cook the chicken until fully cooked.",
+    "Combine cooked pasta and chicken with Alfredo sauce, stirring until heated through."
+  ],
+  4: [
+    "Preheat the oven to 450°F (230°C).",
+    "Spread pizza dough with tomato sauce.",
+    "Top with shredded mozzarella cheese, and desired vegetables.",
+    "Bake in the oven for 15-20 minutes, until cheese is melted and crust is golden brown."
+  ],
+  5: [
+    "Preheat grill to medium-high heat.",
+    "Season salmon fillets with salt and pepper.",
+    "Grill salmon for 4-5 minutes per side, until fish flakes easily with a fork.",
+    "Serve with lemon wedges."
+  ],
+  6: [
+    "Cook pasta according to package instructions.",
+    "In a large skillet, sauté seasonal vegetables until tender-crisp.",
+    "Toss cooked pasta with vegetables and a drizzle of olive oil."
+  ],
+  7: [
+    "In a skillet, cook ground beef until browned and cooked through.",
+    "Season with taco seasoning.",
+    "Serve beef in taco shells with desired toppings like lettuce, tomatoes, cheese, and salsa."
+  ],
+  8: [
+    "Cook rice according to package instructions.",
+    "In a large skillet, heat oil over medium heat.",
+    "Add shrimp and cook until pink and opaque.",
+    "Stir in cooked rice, soy sauce, and vegetables.",
+    "Cook until heated through."
+  ],
+  9: [
+    "Grill chicken until fully cooked.",
+    "Slice grilled chicken and place on a bed of romaine lettuce.",
+    "Top with Caesar dressing, croutons, and Parmesan cheese."
+  ],
+  10: [
+    "Cook spaghetti in boiling water until al dente.",
+    "In a large skillet, cook pancetta until crispy.",
+    "Whisk together eggs, Parmesan cheese, and black pepper in a bowl.",
+    "Toss cooked spaghetti with pancetta and egg mixture."
+  ],
+  11: [
+    "Preheat oil in a deep fryer or large skillet to 375°F (190°C).",
+    "Dredge fish fillets in seasoned flour.",
+    "Fry fish in hot oil until golden brown and crispy.",
+    "Serve with thick-cut fries."
+  ],
+  12: [
+    "In a large saucepan, heat butter over medium heat.",
+    "Add rice and cook until lightly toasted.",
+    "Gradually add hot chicken broth, stirring constantly.",
+    "Stir in mushrooms and cook until rice is tender and creamy."
+  ],
+  13: [
+    "Preheat grill to medium-high heat.",
+    "Season lamb chops with salt, pepper, and herbs.",
+    "Grill lamb chops for 3-4 minutes per side, until desired doneness.",
+    "Let chops rest for a few minutes before serving."
+  ],
+  14: [
+    "Heat falafel patties according to package instructions.",
+    "Warm tortillas or flatbread.",
+    "Spread hummus on tortillas, top with warmed falafel, and desired vegetables.",
+    "Wrap and serve."
+  ],
+  15: [
+    "Cook quinoa in boiling water until tender, about 15 minutes.",
+    "In a large bowl, toss cooked quinoa with roasted vegetables.",
+    "Drizzle with olive oil and season with salt and pepper."
+  ],
+  16: [
+    "Preheat oven to 350°F (175°C).",
+    "Grease and flour baking pans.",
+    "In a large bowl, combine flour, sugar, cocoa powder, baking powder, and baking soda.",
+    "Add eggs, milk, oil, and vanilla extract, and beat until smooth.",
+    "Pour batter into pans and bake for 30-35 minutes, until a toothpick inserted into the center comes out clean."
+  ],
+  17: [
+    "In a large bowl, combine assorted fresh fruits.",
+    "Drizzle honey over fruit and toss gently to coat.",
+    "Refrigerate until ready to serve."
+  ],
+  18: [
+    "Brew strong coffee and let it cool to room temperature.",
+    "In a bowl, beat together mascarpone cheese, sugar, and vanilla extract until smooth.",
+    "Dip ladyfinger biscuits in cooled coffee and layer in a serving dish with mascarpone mixture.",
+    "Repeat layers, ending with a layer of mascarpone mixture on top.",
+    "Dust with cocoa powder and refrigerate for at least 2 hours before serving."
+  ],
+  19: [
+    "In a large pot, sauté onions in oil until translucent.",
+    "Add potatoes and berbere spice, stirring to coat.",
+    "Add water and simmer until potatoes are tender.",
+    "Serve hot with injera or rice."
+  ],
+  20: [
+    "In a large pot, sauté onions in oil until translucent.",
+    "Add chicken pieces and cook until browned.",
+    "Stir in berbere spice and water, and simmer until chicken is cooked through and sauce is thickened."
+  ],
+  21: [
+    "In a large pot, sauté onions in oil until translucent.",
+    "Add beef pieces and cook until browned.",
+    "Stir in berbere spice and water, and simmer until beef is tender and sauce is thickened."
+  ],
+  22: [
+    "In a large bowl, mix minced raw beef with spiced butter and spices.",
+    "Serve immediately with injera and side dishes."
+  ],
+  23: [
+    "In a large skillet, sauté onions in oil until translucent.",
+    "Add cubed meat and cook until browned.",
+    "Stir in spices and cook until meat is tender and sauce is thickened."
+  ],
+};
 
