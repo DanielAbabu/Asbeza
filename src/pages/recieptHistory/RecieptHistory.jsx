@@ -17,26 +17,26 @@ export default function ReceiptHistory() {
         <tbody>
           <tr>
             <Link to="/receiptdetail">
-              <td>ASB004528021/24</td>
-              <td>23/06/2024</td>
+              <td>ASB004528024/24</td>
+              <td>18/07/2024</td>
+            </Link>
+          </tr>
+          <tr>
+            <Link to="/receiptdetail">
+              <td>ASB004528023/24</td>
+              <td>18/07/2024</td>
+            </Link>
+          </tr>
+          <tr>
+            <Link to="/receiptdetail">
+              <td>ASB004528022/24</td>
+              <td>17/07/2024</td>
             </Link>
           </tr>
           <tr>
             <Link to="/receiptdetail">
               <td>ASB004528021/24</td>
-              <td>23/06/2024</td>
-            </Link>
-          </tr>
-          <tr>
-            <Link to="/receiptdetail">
-              <td>ASB004528021/24</td>
-              <td>23/06/2024</td>
-            </Link>
-          </tr>
-          <tr>
-            <Link to="/receiptdetail">
-              <td>ASB004528021/24</td>
-              <td>23/06/2024</td>
+              <td>17/07/2024</td>
             </Link>
           </tr>
         </tbody>
