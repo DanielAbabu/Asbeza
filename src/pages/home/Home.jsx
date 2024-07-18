@@ -45,24 +45,24 @@ export default function Home(){
                 <div className="lis">
                 <Mealcard
                 key={1}
-                id={1}
+                id={2}
                 image={meals[1].imgSrc}
                 title={meals[1].name}
                 description={meals[1].description}
               />
                 <Mealcard
-                key={1}
-                id={1}
-                image={meals[1].imgSrc}
-                title={meals[1].name}
-                description={meals[1].description}
+                key={2}
+                id={3}
+                image={meals[2].imgSrc}
+                title={meals[2].name}
+                description={meals[2].description}
               />
                 <Mealcard
-                key={1}
-                id={1}
-                image={meals[1].imgSrc}
-                title={meals[1].name}
-                description={meals[1].description}
+                key={3}
+                id={4}
+                image={meals[3].imgSrc}
+                title={meals[3].name}
+                description={meals[3].description}
               />
 
 

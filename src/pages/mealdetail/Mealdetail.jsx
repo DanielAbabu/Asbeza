@@ -70,6 +70,17 @@ export default function Mealdetail() {
           return ingredient && <Ingred key={ingredient.id} name={ingredient.name} price={ingredient.price} imgSrc={ingredient.imgSrc} />;
         })}
       </div>
-    </div>
+{/* 
+      <h2>How to cook</h2>
+      <hr className="divider" />
+      <div className="guidlis">
+        {meal.ingredientIds.map((ingredientId) => {
+          const ingredient = ingredients.find((ing) => ing.id === ingredientId);
+          return ingredient && <Ingred key={ingredient.id} name={ingredient.name} price={ingredient.price} imgSrc={ingredient.imgSrc} />;
+        })}
+      </div> */}
+      </div>
+
+
   );
 }

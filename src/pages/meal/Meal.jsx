@@ -26,12 +26,12 @@ export default function Meal() {
     <div className="meal-page">
       <div className="meal-page-top">
         <div className="trending-wrapper">
-          <Trending
-            id={2}
-            name="Smoked Beef"
-            ing="with barbeque sauce, brown sugar, chili powder, yellow mustard, belly"
-            src={food1}
-            alt="smoked beef"
+        <Trending
+            id={1}
+            name={meals[0].name}
+            ing={meals[0].description}
+            src={meals[0].imgSrc}
+            alt={meals[0].name}
           />
         </div>
         <Choose title="Choose Ingredient" link="/ingredient" src={food3} />

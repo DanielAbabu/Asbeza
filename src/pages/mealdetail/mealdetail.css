@@ -121,7 +121,7 @@
 }
 
 .mealdetail h2 {
-  margin: 0 0 15px 50px;
+  margin: 20px 0 15px 50px;
   font-size: 32px;
 }
 .mealdetail .txts .kl{
@@ -131,4 +131,5 @@
 .mealdetail .inglis {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 }

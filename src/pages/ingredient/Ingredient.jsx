@@ -1,5 +1,5 @@
 import "./ingredient.css";
-import { ingredients } from "../../data"; 
+import { ingredients,meals } from "../../data"; 
 import Trending from "../../components/trending/Trending";
 import Choose from "../../components/choose/Choose";
 import IngredientCard from "../../components/ingrediantcard/IngrediantCard";
@@ -23,11 +23,12 @@ export default function Ingredient() {
     <div className="ingredient">
       <div className="ingredient-top">
         <div className="trending-wrapper">
-          <Trending
-            name={"Smoked Beef"}
-            ing={"Meat, Chicken, Onion, Spices"}
-            src={food1}
-            alt={"smoked beef"}
+        <Trending
+            id={1}
+            name={meals[1].name}
+            ing={meals[1].description}
+            src={meals[1].imgSrc}
+            alt={meals[1].name}
           />
         </div>
         <Choose className="otherrat"
