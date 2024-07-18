@@ -1,8 +1,8 @@
 import React, { useState, useContext } from "react";
 import { useParams } from "react-router-dom";
 import { CartContext } from "../../components/cartcontext/cartcontext";
-import { meals, ingredients } from "../../data"; // Adjust the import path as needed
 import Ingred from "./../../components/Ingred/Ingred";
+import { meals, ingredients, recipes } from "../../data";
 import "./mealdetail.css";
 
 export default function Mealdetail() {
@@ -70,17 +70,17 @@ export default function Mealdetail() {
           return ingredient && <Ingred key={ingredient.id} name={ingredient.name} price={ingredient.price} imgSrc={ingredient.imgSrc} />;
         })}
       </div>
-{/* 
-      <h2>How to cook</h2>
+
+      <h2>How to Cook</h2>
       <hr className="divider" />
       <div className="guidlis">
-        {meal.ingredientIds.map((ingredientId) => {
-          const ingredient = ingredients.find((ing) => ing.id === ingredientId);
-          return ingredient && <Ingred key={ingredient.id} name={ingredient.name} price={ingredient.price} imgSrc={ingredient.imgSrc} />;
-        })}
-      </div> */}
+        {recipes[meal.recipeId].map((step, index) => (
+          <div key={index} className="step">
+            <h3>Step {index+1}</h3>
+            <span>{step}</span>
+          </div>
+        ))}
       </div>
-
-
+    </div>
   );
 }
