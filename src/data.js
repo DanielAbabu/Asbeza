@@ -5,7 +5,7 @@ export const meals = [
     ingredientIds: [24, 2, 23],
     imgSrc: "/steak.jpg",
     preparationTime: "30 - 40 minutes",
-    description: "Tender smoked beef with rich spices.",
+    description: "with Bacon, Old Bay Fries, Caramelized Onion & Special Sauce",
     price: 340,
     tags: ["main"],
   },
