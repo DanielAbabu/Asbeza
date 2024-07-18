@@ -1,31 +1,34 @@
-.receiptHistory{
-    width: 60%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    min-height: 500px;
-    background-color: white;
-    padding: 45px 40px;
-    margin: 20px;
-    border: 1px solid #d9d9d9;
-    border-radius: 10px;
-    
+.receiptHistory {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 500px;
+  background-color: white;
+  padding: 45px 40px;
+  margin: 20px;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
 }
 
 .receiptHistory .custom-table {
-    margin-top: 20px;
-    border-collapse: collapse;
+  margin-top: 20px;
+  border-collapse: collapse;
 }
-
 
 .receiptHistory .custom-table tbody td {
-    border-bottom: 1px solid #ddd;
-    padding: 10px 200px 5px 5px;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 200px 5px 5px;
+}
+.receiptHistory .custom-table thead td {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 200px 5px 5px;
+  padding-left: 10px;
 }
 
-
-.receiptHistory th ,.receiptHistory td{
-    width: auto;
-    min-width: 160px;
-    height: 40px;
+.receiptHistory th,
+.receiptHistory td {
+  width: auto;
+  min-width: 160px;
+  height: 50px;
 }

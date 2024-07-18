@@ -1,57 +1,54 @@
-.receipt{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 1000px;
-    min-height: 500px;
-    background-color: white;
-    padding: 5px 40px;
-    margin: 20px;
-    border: 1px solid #d9d9d9;
-    border-radius: 10px;
+.receipt {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 1000px;
+  min-height: 500px;
+  background-color: white;
+  padding: 5px 40px;
+  margin: 20px;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
 }
 
 .receipt .checkout-top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    border: 1px solid #d9d9d9;
-    border-radius: 5px;
-  
-  }
-
-  .receipt .btnnn{
-    width: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    margin: 10px;
-    margin-top: 40px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
 }
 
-.receipt .btnnn a{
-    padding: 5px 25px;
-    color: white;
-    background-color: var(--g1);
-    border-radius: 5px;
-
+.receipt .btnnn {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 10px;
+  margin-top: 40px;
 }
 
-  .receipt .checkout-top span {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 8px;
-    font-weight: 500;
-  }
-  
-.receipt .addrs{
-    background-color: var(--g2);
+.receipt .btnnn a {
+  padding: 5px 25px;
+  color: white;
+  background-color: var(--g1);
+  border-radius: 5px;
 }
-.receipt .paym{
-    background-color: var(--g2);
+
+.receipt .checkout-top span {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 8px;
+  font-weight: 500;
 }
-.receipt .rece{
-    background-color: var(--bg);
+
+.receipt .addrs {
+  background-color: var(--g2);
+}
+.receipt .paym {
+  background-color: var(--g2);
+}
+.receipt .rece {
+  background-color: var(--bg);
 }

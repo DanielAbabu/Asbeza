@@ -1,68 +1,99 @@
 @import "src/styles/variable.css";
 
-
-.payment{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 1000px;
-    min-height: 500px;
-    background-color: white;
-    padding: 5px 40px;
-    margin: 20px;
-    border: 1px solid #d9d9d9;
-    border-radius: 10px;
+.payment {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 1000px;
+  min-height: 500px;
+  background-color: white;
+  padding: 5px 40px;
+  margin: 20px;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
 }
 
 .payment .checkout-top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    border: 1px solid #d9d9d9;
-    border-radius: 5px;
-  
-  }
-  .payment .checkout-top span {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: 8px;
-    font-weight: 500;
-  }
-
-  .payment .btnnn{
-    width: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    margin: 10px;
-    margin-top: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
 }
-.payment .addrs{
-    background-color: var(--g2);
-}
-.payment .paym{
-    background-color: var(--bg);
-}
-.payment .rece{
-    background-color: white;
+.payment .checkout-top span {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 8px;
+  font-weight: 500;
 }
 
-.payment .payc{
-    display: flex;
-    flex-direction: column;
-    margin-top: 60px;
+.payment .btnnn {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 10px;
+  margin-top: 130px;
+}
+.payment .addrs {
+  background-color: var(--g2);
+}
+.payment .paym {
+  background-color: var(--bg);
+}
+.payment .rece {
+  background-color: white;
 }
 
-.payment .payc input{
-        margin: 16px;
-        width: 300px;
-        height: 30px;
+/* Optimized payc styles */
+.payment .payc {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  width: 50%;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.payment .payc button{
-    padding: 6px;
-    background-color: var(--g1);
-    color: white;
-    font-weight: 600;
+.payment .payc h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.payment .payc button {
+  padding: 10px 20px;
+  background-color: var(--g1);
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  margin: 20px 15px;
+}
+.payment .payc button:hover {
+  transform: scale(1.03);
+}
+
+.payment .payc div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #dcdcdc;
+  margin: 10px 0;
+  padding: 10px 0;
+}
+.payment .payc div p {
+  width: 100%;
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+.payment .payc div p:first-child {
+  font-weight: 600;
+  color: var(--secondary-color);
 }

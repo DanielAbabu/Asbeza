@@ -26,26 +26,32 @@ export default function Navbar() {
       <div className="logo">ASBEZA</div>
       <div className="page">
         <NavLink
-          className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
           to="/"
         >
           Home
         </NavLink>
         <NavLink
-          className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
           to="/meal"
         >
           Meal
         </NavLink>
         <NavLink
-          className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+          className={({ isActive }) =>
+            isActive ? "nav-link active" : "nav-link"
+          }
           to="/ingredient"
         >
           Ingredient
         </NavLink>
       </div>
       <div className="right">
-        <MdOutlineShoppingCart size={"30px"} onClick={togglePopup}/>
+        <MdOutlineShoppingCart size={"30px"} onClick={togglePopup} />
         <Popup
           isVisible={popupVisible}
           togglePopup={togglePopup}
@@ -53,22 +59,22 @@ export default function Navbar() {
         />
 
         {user ? (
-
-        <div className="profil" onClick={toggleDropdown}>
-        <img src="./src\assets\profile.jpg" alt="" />
-        <DropdownMenu
-          isVisible={dropdownVisible}
-          toggleDropdown={toggleDropdown}
-        />
-        </div>
+          <div className="profil">
+            <img
+              src="./src\assets\profile.jpg"
+              alt=""
+              onClick={toggleDropdown}
+            />
+            <DropdownMenu
+              isVisible={dropdownVisible}
+              toggleDropdown={toggleDropdown}
+            />
+          </div>
         ) : (
           <div className="signin">
             <NavLink to="/signup">Sign up</NavLink>
           </div>
-       )} 
-
-
-
+        )}
       </div>
     </div>
   );

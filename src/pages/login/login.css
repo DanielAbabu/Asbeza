@@ -1,98 +1,98 @@
-@import "src/styles/variable.css";
-.login{
-    height:100vh;
-    width:100%;
-    background-color: var(--g1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@import "../../../src/styles/variable.css";
+.login {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--g1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .login .con {
-    display: flex;
+  display: flex;
 
-    height: 90vh;
-    width: 70%;
-    background-color: #ffffff;
-    /* border: 1px solid rgb(231, 231, 231); */
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin: 70px;
+  height: 90vh;
+  width: 70%;
+  background-color: #ffffff;
+  /* border: 1px solid rgb(231, 231, 231); */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 70px;
 }
 
 .login .info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 50%;
 }
 
 .login .logo {
-    font-size: 2em;
-    font-weight: bold;
-    margin-bottom: 10px;
-    display: block;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
 }
 
 .login .wel {
-    font-size: 1.2em;
-    margin-bottom: 30px;
+  font-size: 1.2em;
+  margin-bottom: 30px;
 }
 
 .login form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .login label {
-    margin-bottom: 5px;
-    text-align: left;
+  margin-bottom: 5px;
+  text-align: left;
 }
 
 .login input[type="text"],
 .login input[type="email"],
 .login input[type="password"] {
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid var(--g1);
-    border-radius: 4px;
-    width: 300px;
-    height: 30px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid var(--g1);
+  border-radius: 4px;
+  width: 300px;
+  height: 30px;
 }
 
 .login input[type="submit"] {
-    padding: 10px;
-    background-color: var(--g2);
-    color: #000000;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1em;
-    width: 300px;
-    font-weight: 600;
+  padding: 10px;
+  background-color: var(--g2);
+  color: #000000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  width: 300px;
+  font-weight: 600;
 }
 
 .login input[type="submit"]:hover {
-    background-color: #a2cc5f;
+  background-color: #a2cc5f;
 }
 
-.login .limg{
-    background-color: var(--g2);
-    background-image: url("/logg.png"); 
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat;
-    width: 50%;
-    height: 100%;
-    border-radius: 8px 20px 20px 8px ;
+.login .limg {
+  background-color: var(--g2);
+  background-image: url("/logg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 100%;
+  border-radius: 8px 20px 20px 8px;
 }
-.login .lnkk{
-    margin-top: 10px;
-    font-size: 14px;
+.login .lnkk {
+  margin-top: 10px;
+  font-size: 14px;
 }
 
-.login .lnkk a{
-    color: var(--g1);
-    font-weight: 700;
+.login .lnkk a {
+  color: var(--g1);
+  font-weight: 700;
 }
