@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./login.css";
 import { useAuth } from "../../contexts/AuthContext";
+import { Link } from "react-router-dom";
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -54,7 +55,7 @@ export default function Login() {
           </div>
           <div className="lnkk">
             <span>You don't have an account? </span>
-            <a href="/signup">Sign up</a>
+            <Link to="/signup">Sign up</Link>
           </div>
         </div>
       </div>
