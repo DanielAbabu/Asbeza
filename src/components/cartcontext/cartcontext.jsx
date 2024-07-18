@@ -25,6 +25,10 @@ export const CartProvider = ({ children }) => {
   const removeItemFromCart = (id) => {
     setCartItems((prevItems) => prevItems.filter((item) => item.id !== id));
   };
+  const clearCart = () => {
+    setCartItems([]);
+    setTotalPrice(0);
+  };
 
   return (
     <CartContext.Provider
