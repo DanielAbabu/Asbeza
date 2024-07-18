@@ -1,5 +1,5 @@
 import React from "react";
-import { meals } from "../../data"; // Adjust the import path as needed
+import { meals } from "../../data"; 
 import Mealcard from "../../components/mealcard/Mealcard";
 import Trending from "../../components/trending/Trending";
 import Choose from "../../components/choose/Choose";

@@ -4,7 +4,7 @@ import OrderAdjust from "../orderadjust/OrderAdjust";
 import { CartContext } from "../../components/cartcontext/cartcontext";
 import { Link } from "react-router-dom";
 
-export default function IngrediantCard({ price, item }) {
+export default function IngrediantCard({ price, item, imgg }) {
   const { addItemToCart } = useContext(CartContext);
   const [amount, setAmount] = useState(1);
 
@@ -31,7 +31,7 @@ export default function IngrediantCard({ price, item }) {
   return (
     <div className="ingrediant-card">
       <div className="ingrediant-name">
-        <img src={"/tomato.png"} alt={"Tomatoes"} width="40px" />
+        <img src={imgg} alt={"Tomatoes"} width="40px" />
         <p>{item}</p>
       </div>
 

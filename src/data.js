@@ -38,6 +38,12 @@ export const ingredients = [
     price: 40,
     imgSrc: "/tomato.png",
   },
+  {
+    id: 2,
+    name: "Tomatoes",
+    price: 40,
+    imgSrc: "/tomato.png",
+  },
 ]; 
 
 

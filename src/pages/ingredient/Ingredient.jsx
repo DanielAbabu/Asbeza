@@ -1,4 +1,5 @@
 import "./ingredient.css";
+import { ingredients } from "../../data"; 
 import Trending from "../../components/trending/Trending";
 import Choose from "../../components/choose/Choose";
 import IngredientCard from "../../components/ingrediantcard/IngrediantCard";
@@ -30,8 +31,8 @@ export default function Ingredient() {
           <Search item={"Ingredient"} />
         </div>
         <div className="Ingredientcards-wrapper">
-          {IngredientCards.map((_, index) => (
-            <IngredientCard price={40} item={"Tomatoes"} key={index} />
+          {ingredients.map((ingredi) => (
+            <IngredientCard price={ingredi.price} item={ingredi.name} key={ingredi.id} imgg={ingredi.imgSrc} />
           ))}
         </div>
       </div>
