@@ -1,16 +1,15 @@
-import "./mealcard.css";
+import React from "react";
 import { Link } from "react-router-dom";
+import "./mealcard.css";
 
-export default function Mealcard() {
+export default function Mealcard({ id, image, title, description }) {
   return (
-    <Link to="/mealdetail">
+    <Link to={`/mealdetail/${id}`}>
       <div className="mealcard">
-        <img className="pic" src="/food2.png" alt="" />
-        <h3 className="tit">Cheesy Burger</h3>
-        <h4 className="desc">
-          with Bacon, Old Bay Fries, Caramelized Onion & Special Sauce
-        </h4>
-        <div className="ingr">Ingredient</div>
+        <img className="pic" src={image} alt={title} />
+        <h3 className="tit">{title}</h3>
+        <h4 className="desc">{description}</h4>
+        <div className="ingr">Ingredients</div>
       </div>
     </Link>
   );

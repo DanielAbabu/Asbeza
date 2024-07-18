@@ -43,7 +43,7 @@ export default function App() {
       children: [
         { path: "/", element: <Home /> },
         { path: "/meal", element: <Meal /> },
-        { path: "/mealdetail", element: <Mealdetail /> },
+        { path: "/mealdetail/:id", element: <Mealdetail /> },
         { path: "/ingredient", element: <Ingredient /> },
         { path: "/profile", element: <Profile /> },
         { path: "/editprofile", element: <EditProfile /> },

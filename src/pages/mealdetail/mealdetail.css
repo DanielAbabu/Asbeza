@@ -124,7 +124,10 @@
   margin: 0 0 15px 50px;
   font-size: 32px;
 }
-
+.mealdetail .txts .kl{
+  font-weight: 700;
+  font-size: 32px;
+}
 .mealdetail .inglis {
   display: flex;
   flex-wrap: wrap;

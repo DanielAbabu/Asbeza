@@ -1,22 +1,24 @@
-import "./meal.css";
+import React from "react";
+import { meals } from "../../data"; // Adjust the import path as needed
 import Mealcard from "../../components/mealcard/Mealcard";
 import Trending from "../../components/trending/Trending";
 import Choose from "../../components/choose/Choose";
 import Search from "../../components/search/Search";
-import food1 from '/food1.png';
-import food3 from '/food3.png';
+import food1 from "/food1.png";
+import food3 from "/food3.png";
+import "./meal.css";
 
 export default function Meal() {
-  const mealCards = Array.from({ length: 20 });
   return (
     <div className="meal-page">
       <div className="meal-page-top">
         <div className="trending-wrapper">
-          <Trending
+        <Trending
+            id={2}
             name="Smoked Beef"
-            ing="Meat, Chicken, Onion, Spices"
+            ing= "with barbeque sauce, brown sugar, chili powder, yellow mustard, belly"
             src={food1}
-            alt={"smoked beef"}
+            alt="smoked beef"
           />
         </div>
         <Choose
@@ -31,8 +33,14 @@ export default function Meal() {
           <Search item="Meal" />
         </div>
         <div className="meal-display">
-          {mealCards.map((_, index) => (
-            <Mealcard key={index} />
+          {meals.map((meal) => (
+            <Mealcard
+              key={meal.id}
+              id={meal.id} 
+              image={meal.imgSrc}
+              title={meal.name}
+              description={meal.description}
+            />
           ))}
         </div>
       </div>
